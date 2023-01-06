@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/AppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/config/AppConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672981782330</updated>
-      <workItem from="1672981783453" duration="3580000" />
+      <workItem from="1672981783453" duration="4347000" />
     </task>
     <servers />
   </component>

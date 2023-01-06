@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * @since : 0.1.0
  **/
 
-//@Configuration
+@Configuration
 @ComponentScan(basePackages = "lk.ijse.spring")
 public class AppConfig {
 
@@ -19,6 +19,7 @@ public class AppConfig {
     }
 
     @Bean
+//     Container invoke this when use @Bean
     public BasicDataSource basicDataSource(){
         return new BasicDataSource();
     }
