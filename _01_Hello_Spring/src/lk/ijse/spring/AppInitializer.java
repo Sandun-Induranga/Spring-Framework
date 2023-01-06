@@ -41,11 +41,14 @@ public class AppInitializer {
 
         //    ***********************    Bean ID    ****************************
 
-            //    Customer -> customer
+            //    Customer -> customer - First letter simple
 
         Customer customer = (Customer) ctx.getBean("customer");
         customer.getCustomerName();
         System.out.println(customer == c1);
+
+        PojoOne pojoone = (PojoOne) ctx.getBean("pojoOne");
+        System.out.println(pojoone);
 
         ctx.close();
 
