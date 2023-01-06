@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @since : 0.1.0
  **/
 
-@Component
+@Component()
 public class Customer {
     public Customer() {
         System.out.println("Customer: Instantiated");

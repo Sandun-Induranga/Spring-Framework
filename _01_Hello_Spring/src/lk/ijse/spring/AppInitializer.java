@@ -51,10 +51,16 @@ public class AppInitializer {
         System.out.println(pojoone);
 
 
-            // If use @Bean annotation, then should use method name
+            // If use @Bean annotation, then should use method name as bean id
 
         BasicDataSource basicDataSource1 = (BasicDataSource) ctx.getBean("dd");
         System.out.println(basicDataSource1);
+
+
+            // Give bean id
+
+        DBConnection database = (DBConnection) ctx.getBean("database");
+        System.out.println(database);
 
         ctx.close();
 

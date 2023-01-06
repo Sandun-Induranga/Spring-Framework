@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @since : 0.1.0
  **/
 
-@Component
+@Component("database")
 public class DBConnection {
 
     public DBConnection() {
