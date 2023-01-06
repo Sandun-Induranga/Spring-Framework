@@ -19,7 +19,7 @@ public class AppConfig {
     }
 
     @Bean
-//     Container invoke this when use @Bean
+//     Container invoke this if use @Bean
     public BasicDataSource dd() {
         return new BasicDataSource();
     }

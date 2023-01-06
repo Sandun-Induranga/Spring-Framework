@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/AppInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/PojoOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/PojoOne.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,10 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "spring.configuration.checksum": "d41d8cd98f00b204e9800998ecf8427e",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,11 +55,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672981782330</updated>
-      <workItem from="1672981783453" duration="5343000" />
+      <workItem from="1672981783453" duration="7255000" />
+      <workItem from="1673016003539" duration="115000" />
+      <workItem from="1673016148503" duration="883000" />
+      <workItem from="1673017092071" duration="52000" />
+      <workItem from="1673017155277" duration="20000" />
+      <workItem from="1673017245298" duration="123000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
