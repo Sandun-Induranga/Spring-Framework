@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class PojoOne {
 
-    public PojoOne() {
-        System.out.println("PojoOne: Instantiated");
+    public PojoOne(){
+        System.out.println("PoJoOne: Instantiated");
     }
 
 }
