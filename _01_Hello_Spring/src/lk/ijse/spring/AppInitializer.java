@@ -50,6 +50,12 @@ public class AppInitializer {
         PojoOne pojoone = (PojoOne) ctx.getBean("pojoOne");
         System.out.println(pojoone);
 
+
+            // If use @Bean annotation, then should use method name
+
+        BasicDataSource basicDataSource1 = (BasicDataSource) ctx.getBean("dd");
+        System.out.println(basicDataSource1);
+
         ctx.close();
 
     }
