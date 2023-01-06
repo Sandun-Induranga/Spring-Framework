@@ -1,5 +1,7 @@
 package lk.ijse.spring.pojo;
 
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
