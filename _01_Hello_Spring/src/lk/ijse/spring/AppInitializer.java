@@ -1,6 +1,7 @@
 package lk.ijse.spring;
 
 import lk.ijse.spring.config.AppConfig;
+import lk.ijse.spring.pojo.BasicDataSource;
 import lk.ijse.spring.pojo.Customer;
 import lk.ijse.spring.pojo.DBConnection;
 import lk.ijse.spring.pojo.PojoOne;
@@ -24,12 +25,16 @@ public class AppInitializer {
         c1.getCustomerName();
 
         Customer c2 = ctx.getBean(Customer.class);
-        c2.getCustomerName();
+
+        System.out.println(c1 == c2); // Returns true
 
         PojoOne p1 = ctx.getBean(PojoOne.class);
 
         DBConnection dbConnection = ctx.getBean(DBConnection.class);
         dbConnection.testConnection();
+
+        BasicDataSource basicDataSource = ctx.getBean(BasicDataSource.class);
+        basicDataSource.getDataSource();
 
         ctx.close();
 
