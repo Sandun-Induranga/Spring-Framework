@@ -36,6 +36,17 @@ public class AppInitializer {
         BasicDataSource basicDataSource = ctx.getBean(BasicDataSource.class);
         basicDataSource.getDataSource();
 
+
+
+
+        //    ***********************    Bean ID    ****************************
+
+            //    Customer -> customer
+
+        Customer customer = (Customer) ctx.getBean("customer");
+        customer.getCustomerName();
+        System.out.println(customer == c1);
+
         ctx.close();
 
     }

@@ -20,7 +20,7 @@ public class AppConfig {
 
     @Bean
 //     Container invoke this when use @Bean
-    public BasicDataSource basicDataSource(){
+    public BasicDataSource basicDataSource() {
         return new BasicDataSource();
     }
 
