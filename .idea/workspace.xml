@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/PojoOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/PojoOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/_01_Hello_Spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/_01_Hello_Spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/AppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/BasicDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/DBConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/PojoOne.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,23 +41,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/libs/spring-websocket-5.3.9.jar",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "spring.configuration.checksum": "d41d8cd98f00b204e9800998ecf8427e",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/libs/spring-websocket-5.3.9.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +80,12 @@
       <workItem from="1673017092071" duration="52000" />
       <workItem from="1673017155277" duration="20000" />
       <workItem from="1673017245298" duration="123000" />
+      <workItem from="1673017374838" duration="564000" />
+      <workItem from="1673017946061" duration="1585000" />
+      <workItem from="1673019539755" duration="2963000" />
+      <workItem from="1673022510054" duration="6713000" />
+      <workItem from="1673065614282" duration="2350000" />
+      <workItem from="1673069613794" duration="634000" />
     </task>
     <servers />
   </component>

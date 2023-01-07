@@ -16,7 +16,7 @@ public class AppInitializer {
 
     public static void main(String[] args) {
 
-        AnnotationConfigApplicationContext ctx= new AnnotationConfigApplicationContext();
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
 
         ctx.refresh();
@@ -37,11 +37,9 @@ public class AppInitializer {
         basicDataSource.getDataSource();
 
 
-
-
         //    ***********************    Bean ID    ****************************
 
-            //    Customer -> customer - First letter simple
+        //    Customer -> customer - First letter simple
 
         Customer customer = (Customer) ctx.getBean("customer");
         customer.getCustomerName();
@@ -51,13 +49,13 @@ public class AppInitializer {
         System.out.println(pojoone);
 
 
-            // If use @Bean annotation, then should use method name as bean id
+        // If use @Bean annotation, then should use method name as bean id
 
         BasicDataSource basicDataSource1 = (BasicDataSource) ctx.getBean("dd");
         System.out.println(basicDataSource1);
 
 
-            // Give bean id
+        // Give bean id
 
         DBConnection database = (DBConnection) ctx.getBean("database");
         System.out.println(database);
