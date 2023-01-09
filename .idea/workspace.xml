@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/_01_Hello_Spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/_01_Hello_Spring.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/AppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/AppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/config/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/BasicDataSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/DBConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/PojoOne.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +52,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -86,6 +77,17 @@
       <workItem from="1673022510054" duration="6713000" />
       <workItem from="1673065614282" duration="2350000" />
       <workItem from="1673069613794" duration="634000" />
+      <workItem from="1673111144682" duration="399000" />
+      <workItem from="1673117298745" duration="2078000" />
+      <workItem from="1673151084157" duration="3010000" />
+      <workItem from="1673156977586" duration="9000" />
+      <workItem from="1673157165058" duration="6000" />
+      <workItem from="1673157756400" duration="4000" />
+      <workItem from="1673194908657" duration="685000" />
+      <workItem from="1673200952772" duration="5023000" />
+      <workItem from="1673235042972" duration="9009000" />
+      <workItem from="1673245332776" duration="648000" />
+      <workItem from="1673276658601" duration="1613000" />
     </task>
     <servers />
   </component>

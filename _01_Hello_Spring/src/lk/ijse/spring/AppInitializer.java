@@ -60,6 +60,7 @@ public class AppInitializer {
         DBConnection database = (DBConnection) ctx.getBean("database");
         System.out.println(database);
 
+
         ctx.close();
 
     }
