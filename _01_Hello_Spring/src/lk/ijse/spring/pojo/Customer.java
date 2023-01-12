@@ -1,7 +1,5 @@
 package lk.ijse.spring.pojo;
 
-import org.springframework.core.Ordered;
-import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
@@ -15,7 +13,8 @@ public class Customer {
         System.out.println("Customer: Instantiated");
     }
 
-    public void getCustomerName(){
+    public void getCustomerName() {
         System.out.println("Customer Name is Dasun");
     }
+
 }

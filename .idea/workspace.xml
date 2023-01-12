@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_Hello_Spring/src/lk/ijse/spring/pojo/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -87,7 +86,24 @@
       <workItem from="1673200952772" duration="5023000" />
       <workItem from="1673235042972" duration="9009000" />
       <workItem from="1673245332776" duration="648000" />
-      <workItem from="1673276658601" duration="1613000" />
+      <workItem from="1673276658601" duration="3582000" />
+      <workItem from="1673280329014" duration="31000" />
+      <workItem from="1673280368377" duration="812000" />
+      <workItem from="1673288690699" duration="111000" />
+      <workItem from="1673288808769" duration="3605000" />
+      <workItem from="1673327164652" duration="413000" />
+      <workItem from="1673327883841" duration="704000" />
+      <workItem from="1673328595852" duration="1090000" />
+      <workItem from="1673335631427" duration="201000" />
+      <workItem from="1673335845451" duration="1646000" />
+      <workItem from="1673367279222" duration="9000" />
+      <workItem from="1673405192231" duration="308000" />
+      <workItem from="1673406511193" duration="217000" />
+      <workItem from="1673415519974" duration="82000" />
+      <workItem from="1673415825708" duration="3484000" />
+      <workItem from="1673448496451" duration="185000" />
+      <workItem from="1673454073603" duration="2674000" />
+      <workItem from="1673498829576" duration="2308000" />
     </task>
     <servers />
   </component>
