@@ -18,7 +18,7 @@ public class AppConfig {
 
     @Bean
     @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-    public PojoThree pojoThree(){
+    public PojoThree pojoThree() {
         return new PojoThree();
     }
 
