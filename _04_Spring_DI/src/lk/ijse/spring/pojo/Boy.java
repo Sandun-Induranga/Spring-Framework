@@ -13,10 +13,10 @@ import org.springframework.stereotype.Component;
  **/
 
 @Component
-public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
+public class Boy {
 
     @Autowired
-    Girl girl;
+    GoodGirl girl;
 
     public Boy() {
         System.out.println("Boy: Instantiated");
@@ -27,28 +27,4 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
         girl.chat();
     }
 
-    @Override
-    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("Boy: Bean Factory Aware");
-    }
-
-    @Override
-    public void setBeanName(String name) {
-        System.out.println("Boy: Bean Name Aware");
-    }
-
-    @Override
-    public void destroy() throws Exception {
-        System.out.println("Boy: Bean Destroyed");
-    }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        System.out.println("Boy: Bean Initialize: Ready for use");
-    }
-
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("Boy: Application Context Aware");
-    }
 }
