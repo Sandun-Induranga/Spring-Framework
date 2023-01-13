@@ -63,6 +63,13 @@ public class AppInitializer {
 
         ctx.close();
 
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("JVM is About to Shutdown");
+            }
+        }));
+
     }
 
 }
