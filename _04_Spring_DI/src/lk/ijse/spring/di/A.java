@@ -14,11 +14,16 @@ public class A {
 //    @Autowired
     SuperB superB; // Property Injection
 
-    @Autowired // Constructor Injection
+//    @Autowired // Constructor Injection
     // Works without this annotation But it's a conversion
     public A(SuperB superB) {
-        this.superB = superB;
+//        this.superB = superB;
         System.out.println("A: Instantiated");
+    }
+
+    @Autowired
+    public void setInjection(SuperB superB){
+        this.superB = superB;
     }
 
     public void test(){
