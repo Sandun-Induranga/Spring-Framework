@@ -6,41 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_FullMode_LightMode/src/lk/ijse/spring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05_FullMode_LightMode/src/lk/ijse/spring/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_FullMode_LightMode/src/lk/ijse/spring/pojo/PojoOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_05_FullMode_LightMode/src/lk/ijse/spring/pojo/PojoOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/META-INF/spring.components" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/AppInitializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/AppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/config/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/BasicDataSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/DBConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_01_Hello_Spring/lk/ijse/spring/pojo/PojoOne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_02_Bean_Life_Cycle/META-INF/spring.components" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_02_Bean_Life_Cycle/lk/ijse/spring/AppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_02_Bean_Life_Cycle/lk/ijse/spring/config/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_02_Bean_Life_Cycle/lk/ijse/spring/pojo/PojoOne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_02_Bean_Life_Cycle/lk/ijse/spring/pojo/PojoThree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_02_Bean_Life_Cycle/lk/ijse/spring/pojo/PojoTwo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_03_Spring_Bean_Scopes/META-INF/spring.components" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_03_Spring_Bean_Scopes/lk/ijse/spring/AppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_03_Spring_Bean_Scopes/lk/ijse/spring/config/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_03_Spring_Bean_Scopes/lk/ijse/spring/pojo/PojoOne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_03_Spring_Bean_Scopes/lk/ijse/spring/pojo/PojoThree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_03_Spring_Bean_Scopes/lk/ijse/spring/pojo/PojoTwo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/META-INF/spring.components" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/AppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/config/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/di/A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/di/B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/di/DI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/di/SuperB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/pojo/Boy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/pojo/GirlOne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/pojo/GirlTwo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/pojo/GoodGirl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_05_FullMode_LightMode/lk/ijse/spring/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_05_FullMode_LightMode/lk/ijse/spring/config/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_05_FullMode_LightMode/lk/ijse/spring/pojo/PojoOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_05_FullMode_LightMode/lk/ijse/spring/pojo/PojoOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/pojo/PojoOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/pojo/PojoOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/META-INF/spring.components" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/META-INF/spring.components" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/AppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/pojo/PojoOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/pojo/PojoOne.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +49,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/_05_FullMode_LightMode/src/lk/ijse/spring",
+    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/_06_Spring_Configurations/src/lk/ijse/spring",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,6 +65,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring" />
       <recent name="$PROJECT_DIR$/_05_FullMode_LightMode/src/lk/ijse/spring" />
       <recent name="$PROJECT_DIR$/_03_Spring_Bean_Scopes/src/lk/ijse/spring/pojo" />
     </key>
@@ -149,7 +122,7 @@
       <workItem from="1673549817927" duration="17000" />
       <workItem from="1673550073155" duration="41000" />
       <workItem from="1673577916280" duration="3285000" />
-      <workItem from="1673581210188" duration="18236000" />
+      <workItem from="1673581210188" duration="19288000" />
     </task>
     <servers />
   </component>
