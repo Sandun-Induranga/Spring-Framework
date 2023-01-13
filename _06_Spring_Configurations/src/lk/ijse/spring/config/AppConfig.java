@@ -4,6 +4,7 @@ import lk.ijse.spring.pojo.PojoOne;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 /**
  * @author : Sandun Induranga
@@ -11,7 +12,8 @@ import org.springframework.context.annotation.Configuration;
  **/
 
 @Configuration
-@ComponentScan("lk.ijse.spring")
+@ComponentScan("lk.ijse.spring.pojo")
+@Import({ConfigOne.class, ConfigTwo.class}) // Method Two
 public class AppConfig {
 
     public AppConfig() {

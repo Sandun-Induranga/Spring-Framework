@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/AppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/pojo/PojoOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring/pojo/PojoOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/META-INF/spring.components" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/META-INF/spring.components" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/AppInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/config/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/pojo/PojoOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_06_Spring_Configurations/lk/ijse/spring/pojo/PojoOne.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +116,7 @@
       <workItem from="1673549817927" duration="17000" />
       <workItem from="1673550073155" duration="41000" />
       <workItem from="1673577916280" duration="3285000" />
-      <workItem from="1673581210188" duration="19288000" />
+      <workItem from="1673581210188" duration="19751000" />
     </task>
     <servers />
   </component>
