@@ -14,10 +14,6 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("lk.ijse.spring")
 public class AppConfig {
 
-    public AppConfig() {
-        System.out.println("AppConfig: Instantiate");
-    }
-
     @Bean
     public PojoThree pojoThree(){
         return new PojoThree();
