@@ -15,8 +15,19 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("lk.ijse.spring")
 public class AppConfig {
 
+    // Full Mode
     @Bean
     public PojoTwo pojoTwo(){
+
+        // Inter-Bean dependencies Innovation
+        // In Full Mode, Satisfied Inter-Bean Dependencies
+
+        PojoThree pojoThree = pojoThree();
+        PojoThree pojoThree1 = pojoThree();
+
+        System.out.println(pojoThree);
+        System.out.println(pojoThree1);
+
         return new PojoTwo();
     }
 
