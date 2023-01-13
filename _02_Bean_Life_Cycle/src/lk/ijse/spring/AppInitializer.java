@@ -1,6 +1,7 @@
 package lk.ijse.spring;
 
 import lk.ijse.spring.config.AppConfig;
+import lk.ijse.spring.pojo.PojoOne;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -14,6 +15,8 @@ public class AppInitializer {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
         ctx.refresh();
+
+        System.out.println(ctx.getBean(PojoOne.class));
 
         ctx.registerShutdownHook();
 

@@ -39,6 +39,7 @@ public class PojoOne implements BeanNameAware, BeanFactoryAware, ApplicationCont
     }
 
     @Override
+    //Only invokes, if ctx.close() or ctx.registerShutDownHook() called
     public void destroy() throws Exception {
         System.out.println("PojoOne: Destroyed");
     }
