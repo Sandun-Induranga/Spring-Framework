@@ -17,6 +17,9 @@ public class DBConnection implements InitializingBean {
     @Value("${USER}")
     private String myUserName;
 
+    @Value("${db.user.name}")
+    private String dbUsername;
+
     public DBConnection() {
         System.out.println("DBConnection: Instantiated");
     }
@@ -25,5 +28,6 @@ public class DBConnection implements InitializingBean {
     public void afterPropertiesSet() throws Exception {
         System.out.println(myOSName);
         System.out.println(myUserName);
+        System.out.println(dbUsername);
     }
 }
