@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/_08_Spring_Environments/_08_Spring_Environments.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_07_Runtime_Value_Injection/META-INF/spring.components" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_07_Runtime_Value_Injection/META-INF/spring.components" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_07_Runtime_Value_Injection/lk/ijse/spring/pojo/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_07_Runtime_Value_Injection/lk/ijse/spring/pojo/Customer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/_07_Runtime_Value_Injection/src/lk/ijse/spring",
+    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/_08_Spring_Environments/src/lk/ijse/spring",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,6 +60,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_08_Spring_Environments/src/lk/ijse/spring" />
       <recent name="$PROJECT_DIR$/_07_Runtime_Value_Injection/src/lk/ijse/spring" />
       <recent name="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring" />
       <recent name="$PROJECT_DIR$/_05_FullMode_LightMode/src/lk/ijse/spring" />
@@ -118,7 +119,7 @@
       <workItem from="1673549817927" duration="17000" />
       <workItem from="1673550073155" duration="41000" />
       <workItem from="1673577916280" duration="3285000" />
-      <workItem from="1673581210188" duration="22712000" />
+      <workItem from="1673581210188" duration="23454000" />
     </task>
     <servers />
   </component>
