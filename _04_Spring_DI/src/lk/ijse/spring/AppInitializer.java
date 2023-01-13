@@ -17,7 +17,7 @@ public class AppInitializer {
         ctx.refresh();
 
         Boy boy = ctx.getBean(Boy.class);
-        System.out.println(boy);
+        boy.chatWithGirl();
 
         ctx.registerShutdownHook();
 
