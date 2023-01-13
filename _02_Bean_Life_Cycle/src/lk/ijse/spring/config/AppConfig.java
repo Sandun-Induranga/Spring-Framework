@@ -11,4 +11,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("lk.ijse.spring")
 public class AppConfig {
+
+    public AppConfig() {
+        System.out.println("AppConfig: Instantiate");
+    }
 }
