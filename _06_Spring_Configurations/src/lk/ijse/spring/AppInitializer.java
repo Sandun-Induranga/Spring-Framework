@@ -19,6 +19,7 @@ public class AppInitializer {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 
         // Method One
+
         ctx.register(AppConfig.class);
 //        ctx.register(ConfigOne.class);
 //        ctx.register(ConfigTwo.class);
