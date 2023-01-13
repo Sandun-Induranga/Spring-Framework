@@ -1,5 +1,6 @@
 package lk.ijse.spring.pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -11,8 +12,33 @@ import org.springframework.stereotype.Component;
 @Component
 public class Customer {
 
-    public Customer(@Value("ijse") String name) {
-        System.out.println("Customer: Instantiated " + name);
+    @Autowired(required = false)
+    public Customer(@Value("Dasun, Virat, John") String[] names) {
+
+        for (String name :
+                names) {
+            System.out.println(name);
+        }
     }
+
+//    @Autowired // When use this in a class that have multiple constructors, Run this constructor
+//    public Customer(@Value("Dasun") String name){
+//        System.out.println(name);
+//    }
+
+    @Autowired(required = false) // If use @Autowired with required = false in all constructors, Then invoke the constructor that includes most parameters
+    public Customer(@Value("Dasun") String name, @Value("]20") int age){
+        System.out.println(name);
+    }
+
+    /*
+
+    Data Types can pass to @Value
+
+        Primitive Data Types
+        String Data
+        Arrays
+
+     */
 
 }
