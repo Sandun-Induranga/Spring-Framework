@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_08_Spring_Environments/src/lk/ijse/spring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Spring_Environments/src/lk/ijse/spring/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_08_Spring_Environments/src/lk/ijse/spring/pojo/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/_08_Spring_Environments/src/lk/ijse/spring/pojo/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_08_Spring_Environments/lk/ijse/spring/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_08_Spring_Environments/lk/ijse/spring/AppInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_08_Spring_Environments/lk/ijse/spring/pojo/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_08_Spring_Environments/lk/ijse/spring/pojo/DBConnection.class" afterDir="false" />
-    </list>
+    <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +115,7 @@
       <workItem from="1673549817927" duration="17000" />
       <workItem from="1673550073155" duration="41000" />
       <workItem from="1673577916280" duration="3285000" />
-      <workItem from="1673581210188" duration="25164000" />
+      <workItem from="1673581210188" duration="25638000" />
     </task>
     <servers />
   </component>
