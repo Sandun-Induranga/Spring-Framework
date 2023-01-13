@@ -61,14 +61,18 @@ public class AppInitializer {
         System.out.println(database);
 
 
-        ctx.close();
+        // Hooking Process
+        // Execute when jvm about to shut down
+//        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                System.out.println("JVM is About to Shutdown");
+//                ctx.close();
+//            }
+//        }));
 
-        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("JVM is About to Shutdown");
-            }
-        }));
+        // Spring Method for Hooking Process
+        ctx.registerShutdownHook();
 
     }
 
