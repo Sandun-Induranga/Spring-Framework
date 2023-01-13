@@ -1,0 +1,2 @@
+lk.ijse.spring.config.AppConfig=org.springframework.stereotype.Component
+lk.ijse.spring.pojo.PojoOne=org.springframework.stereotype.Component
