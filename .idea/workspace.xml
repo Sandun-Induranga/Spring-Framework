@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_03_Spring_Bean_Scopes/_03_Spring_Bean_Scopes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_02_Bean_Life_Cycle/src/lk/ijse/spring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_Bean_Life_Cycle/src/lk/ijse/spring/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_Spring_Bean_Scopes/src/lk/ijse/spring/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_Spring_Bean_Scopes/src/lk/ijse/spring/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_Spring_Bean_Scopes/src/lk/ijse/spring/pojo/PojoOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_Spring_Bean_Scopes/src/lk/ijse/spring/pojo/PojoOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_03_Spring_Bean_Scopes/lk/ijse/spring/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_03_Spring_Bean_Scopes/lk/ijse/spring/AppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_03_Spring_Bean_Scopes/lk/ijse/spring/pojo/PojoOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_03_Spring_Bean_Scopes/lk/ijse/spring/pojo/PojoOne.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_03_Spring_Bean_Scopes/src/lk/ijse/spring/pojo" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -110,7 +116,7 @@
       <workItem from="1673549817927" duration="17000" />
       <workItem from="1673550073155" duration="41000" />
       <workItem from="1673577916280" duration="3285000" />
-      <workItem from="1673581210188" duration="3674000" />
+      <workItem from="1673581210188" duration="5433000" />
     </task>
     <servers />
   </component>

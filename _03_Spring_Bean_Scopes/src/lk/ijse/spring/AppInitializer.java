@@ -1,6 +1,7 @@
 package lk.ijse.spring;
 
 import lk.ijse.spring.config.AppConfig;
+import lk.ijse.spring.pojo.PojoOne;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -13,9 +14,16 @@ public class AppInitializer {
 
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
-
         ctx.refresh();
+
+        PojoOne pojoOne1 = ctx.getBean(PojoOne.class);
+        PojoOne pojoOne2 = ctx.getBean(PojoOne.class);
+
+        System.out.println(pojoOne1 == pojoOne2); // Return False
+
         ctx.registerShutdownHook();
+
+        ctx.close();
 
     }
 }
