@@ -9,10 +9,11 @@ import org.springframework.stereotype.Component;
  **/
 
 @Component
-public class A {
+public class A implements DI{
 
 //    @Autowired
     SuperB superB; // Property Injection
+
 
 //    @Autowired // Constructor Injection
     // Works without this annotation But it's a conversion
@@ -21,7 +22,8 @@ public class A {
         System.out.println("A: Instantiated");
     }
 
-    @Autowired
+
+//    @Autowired // Setter Method Injection
     public void setInjection(SuperB superB){
         this.superB = superB;
     }
@@ -30,4 +32,10 @@ public class A {
         superB.methodUseByA();
     }
 
+
+    @Autowired
+    @Override
+    public void inject(SuperB superB) {
+        this.superB = superB;
+    }
 }
