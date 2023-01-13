@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/_04_Spring_DI/src/lk/ijse/spring/pojo/GirlTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_Spring_DI/src/lk/ijse/spring/pojo/Boy.java" beforeDir="false" afterPath="$PROJECT_DIR$/_04_Spring_DI/src/lk/ijse/spring/pojo/Boy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_Spring_DI/src/lk/ijse/spring/pojo/Girl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_04_Spring_DI/src/lk/ijse/spring/pojo/GirlOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/META-INF/spring.components" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_04_Spring_DI/META-INF/spring.components" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/pojo/Boy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/pojo/Boy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_04_Spring_DI/lk/ijse/spring/pojo/Girl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -113,7 +119,7 @@
       <workItem from="1673549817927" duration="17000" />
       <workItem from="1673550073155" duration="41000" />
       <workItem from="1673577916280" duration="3285000" />
-      <workItem from="1673581210188" duration="7859000" />
+      <workItem from="1673581210188" duration="8891000" />
     </task>
     <servers />
   </component>

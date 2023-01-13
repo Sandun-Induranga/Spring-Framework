@@ -16,7 +16,8 @@ import org.springframework.stereotype.Component;
 public class Boy {
 
     @Autowired
-    GoodGirl girl;
+//    GoodGirl girl; // When there are two qualify classes It will throw error
+    GoodGirl girl; // @Primary annotation solve it
 
     public Boy() {
         System.out.println("Boy: Instantiated");
