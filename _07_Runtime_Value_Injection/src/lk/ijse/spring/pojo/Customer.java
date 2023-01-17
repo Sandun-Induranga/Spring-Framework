@@ -26,8 +26,9 @@ public class Customer {
 //        System.out.println(name);
 //    }
 
-    @Autowired(required = false) // If use @Autowired with required = false in all constructors, Then invoke the constructor that includes most parameters
-    public Customer(@Value("Dasun") String name, @Value("]20") int age){
+    @Autowired(required = false)
+    // If use @Autowired with required = false in all constructors, Then invoke the constructor that includes most parameters
+    public Customer(@Value("Dasun") String name, @Value("]20") int age) {
         System.out.println(name);
     }
 

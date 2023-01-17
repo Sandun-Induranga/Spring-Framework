@@ -7,6 +7,8 @@
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_02_Bean_Life_Cycle/src/lk/ijse/spring/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_Bean_Life_Cycle/src/lk/ijse/spring/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_07_Runtime_Value_Injection/src/lk/ijse/spring/pojo/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_07_Runtime_Value_Injection/src/lk/ijse/spring/pojo/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_08_Spring_Environments/lk/ijse/spring/pojo/TestBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_08_Spring_Environments/lk/ijse/spring/pojo/TestBean.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/_08_Spring_Environments/src/lk/ijse/spring&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Boot-CRUD&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -119,7 +121,19 @@
       <workItem from="1673550073155" duration="41000" />
       <workItem from="1673577916280" duration="3285000" />
       <workItem from="1673581210188" duration="26675000" />
-      <workItem from="1673670296857" duration="461000" />
+      <workItem from="1673670296857" duration="1144000" />
+      <workItem from="1673711501398" duration="924000" />
+      <workItem from="1673802196801" duration="239000" />
+      <workItem from="1673808385148" duration="496000" />
+      <workItem from="1673840726110" duration="10000" />
+      <workItem from="1673850853120" duration="238000" />
+      <workItem from="1673851097218" duration="1012000" />
+      <workItem from="1673852345248" duration="1337000" />
+      <workItem from="1673898652914" duration="58000" />
+      <workItem from="1673898719577" duration="82000" />
+      <workItem from="1673898814358" duration="18000" />
+      <workItem from="1673930481910" duration="3546000" />
+      <workItem from="1673951608293" duration="759000" />
     </task>
     <servers />
   </component>

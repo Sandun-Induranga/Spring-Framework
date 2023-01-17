@@ -20,7 +20,7 @@ public class AppInitializer {
 
         ctx.registerShutdownHook();
 
-        /* Spring Bean Life Cycle
+        /*                         Spring Bean Life Cycle
         *
         *       1. Instantiate                      -    Create an object
         *       2. Populate Properties              -    Read Properties
