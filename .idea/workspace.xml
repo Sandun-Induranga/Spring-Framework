@@ -9,7 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="" />
+    <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/controller.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_10_Controller/_10_Controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_09_Spring_Web_MVC/src/lk/ijse/spring/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_09_Spring_Web_MVC/src/lk/ijse/spring/config/WebAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/WebAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/config/WebAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/config/WebRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/config/WebRootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/pojo/SpringBeanOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/pojo/SpringBeanOne.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,36 +64,41 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/libs/spring-websocket-5.3.9.jar",
+    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/_10_Controller/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "spring.configuration.checksum": "d41d8cd98f00b204e9800998ecf8427e",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_10_Controller/src" />
       <recent name="$PROJECT_DIR$/_08_Spring_Environments/src/lk/ijse/spring" />
       <recent name="$PROJECT_DIR$/_07_Runtime_Value_Injection/src/lk/ijse/spring" />
       <recent name="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring" />
       <recent name="$PROJECT_DIR$/_05_FullMode_LightMode/src/lk/ijse/spring" />
-      <recent name="$PROJECT_DIR$/_03_Spring_Bean_Scopes/src/lk/ijse/spring/pojo" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Spring" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.84" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="webmvc">
+        <artifact name="controller">
           <settings>
-            <option name="CONTEXT_PATH" value="/webmvc" />
+            <option name="CONTEXT_PATH" value="/controller" />
           </settings>
         </artifact>
       </deployment>
@@ -159,7 +176,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="webmvc" />
+          <artifact name="controller" />
         </option>
       </method>
     </configuration>
@@ -235,7 +252,8 @@
       <workItem from="1674023320741" duration="17000" />
       <workItem from="1674025042649" duration="1792000" />
       <workItem from="1674100811317" duration="788000" />
-      <workItem from="1674182865924" duration="9668000" />
+      <workItem from="1674182865924" duration="11637000" />
+      <workItem from="1674200201252" duration="431000" />
     </task>
     <servers />
   </component>
