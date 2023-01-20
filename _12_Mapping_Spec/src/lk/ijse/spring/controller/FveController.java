@@ -16,7 +16,9 @@ public class FveController {
 
 
 
-    //    Wild Card Mapping
+                    //    Wild Card Mapping    -->    *
+
+    //    *    -    One or more characters can replace with this
 
 
     @GetMapping(path = "/path/*/A/B")
@@ -24,7 +26,15 @@ public class FveController {
         return "Method Invoked";
     }
 
-    @GetMapping(path = "/path/*/A/B")
+
+
+
+                    //    Dual Wild Card Mapping    -->    *
+
+    //    *    -    One or more Segments can replace with this
+
+
+    @GetMapping(path = "/path/**/A/B")
     public String testTwo(){
         return "Method Invoked";
     }
