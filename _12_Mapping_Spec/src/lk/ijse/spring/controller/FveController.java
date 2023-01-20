@@ -19,6 +19,7 @@ public class FveController {
                     //    Wild Card Mapping    -->    *
 
     //    *    -    One or more characters can replace with this
+    /** At least One **/
 
 
     @GetMapping(path = "/path/*/A/B")
@@ -31,7 +32,8 @@ public class FveController {
 
                     //    Dual Wild Card Mapping    -->    *
 
-    //    *    -    One or more Segments can replace with this
+    //    *    -    Zero or more Segments can replace with this
+    /** Zero **/
 
 
     @GetMapping(path = "/path/**/A/B")
