@@ -14,8 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class CustomerController {
 
     @GetMapping
-    public void callMe(){
-        System.out.println("callMe() Method Invoked by the Web Browser");
+    public String testOne() {
+        return "Hello There, How are You?";
+    }
+
+    // Can return any type from rest controllers
+    // But Browser can read only json and string types
+
+    @GetMapping
+    public String testTwo(){
+        return "Test Two";
     }
 
 }

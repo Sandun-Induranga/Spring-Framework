@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="controller" />
+      <artifact name="rest-controller" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,10 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/rest_controller.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_11_RestController/_11_RestController.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/config/WebAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/config/WebRootConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/pojo/SpringBeanOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_10_Controller/src/lk/ijse/spring/config/WebAppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/controller/controller.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/controller/controller.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/_10_Controller/lk/ijse/spring/config/WebAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_10_Controller/lk/ijse/spring/config/WebAppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_11_RestController/src/lk/ijse/spring/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_RestController/src/lk/ijse/spring/controller/CustomerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +64,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/_10_Controller/src",
+    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/_12_Mapping_Spec/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,20 +85,23 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_12_Mapping_Spec/src" />
+      <recent name="$PROJECT_DIR$/_11_RestController/src" />
       <recent name="$PROJECT_DIR$/_10_Controller/src" />
       <recent name="$PROJECT_DIR$/_08_Spring_Environments/src/lk/ijse/spring" />
       <recent name="$PROJECT_DIR$/_07_Runtime_Value_Injection/src/lk/ijse/spring" />
-      <recent name="$PROJECT_DIR$/_06_Spring_Configurations/src/lk/ijse/spring" />
-      <recent name="$PROJECT_DIR$/_05_FullMode_LightMode/src/lk/ijse/spring" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lk.ijse.spring" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Spring" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.84" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="controller">
+        <artifact name="mapping_spec">
           <settings>
-            <option name="CONTEXT_PATH" value="/controller" />
+            <option name="CONTEXT_PATH" value="/mapping_spec" />
           </settings>
         </artifact>
       </deployment>
@@ -170,7 +179,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="controller" />
+          <artifact name="mapping_spec" />
         </option>
       </method>
     </configuration>
@@ -247,7 +256,7 @@
       <workItem from="1674025042649" duration="1792000" />
       <workItem from="1674100811317" duration="788000" />
       <workItem from="1674182865924" duration="11637000" />
-      <workItem from="1674200201252" duration="2299000" />
+      <workItem from="1674200201252" duration="4412000" />
     </task>
     <servers />
   </component>

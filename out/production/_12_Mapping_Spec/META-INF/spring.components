@@ -1,0 +1,4 @@
+lk.ijse.spring.config.WebAppConfig=org.springframework.stereotype.Component
+lk.ijse.spring.config.WebRootConfig=org.springframework.stereotype.Component
+lk.ijse.spring.controller.CustomerController=org.springframework.stereotype.Component
+lk.ijse.spring.pojo.SpringBeanOne=org.springframework.stereotype.Component
