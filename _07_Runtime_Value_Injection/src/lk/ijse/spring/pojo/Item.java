@@ -1,5 +1,6 @@
 package lk.ijse.spring.pojo;
 
+import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Component;
  **/
 
 @Component
-public class Item implements InitializingBean {
+public class Item implements InitializingBean, BeanNameAware {
 
     @Value("IJSE")
     String name;
@@ -24,5 +25,10 @@ public class Item implements InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println(name); // returns IJSE as this bean ready now.
+    }
+
+    @Override
+    public void setBeanName(String name) {
+        System.out.println(this.name);
     }
 }
