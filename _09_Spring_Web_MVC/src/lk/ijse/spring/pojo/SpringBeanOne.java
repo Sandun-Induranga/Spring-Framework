@@ -25,7 +25,7 @@ public class SpringBeanOne implements BeanNameAware, BeanFactoryAware, Applicati
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("SpringBeanOne: Bean Factory Aware: ");
+        System.out.println("SpringBeanOne: Bean Factory Aware");
     }
 
     @Override
