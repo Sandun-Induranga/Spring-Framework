@@ -18,8 +18,13 @@ public class FourController {
 
     // ?    -> Any Character can assign this in url
 
-    @GetMapping("/C?DEF")
+    @GetMapping(path = "/C?DEF")
     public String testOne() {
+        return "Method Invoked";
+    }
+
+    @GetMapping(path = "/C??DEF")
+    public String testTwo() {
         return "Method Invoked";
     }
 

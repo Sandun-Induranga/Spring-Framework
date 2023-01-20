@@ -1,6 +1,7 @@
 lk.ijse.spring.config.WebAppConfig=org.springframework.stereotype.Component
 lk.ijse.spring.config.WebRootConfig=org.springframework.stereotype.Component
 lk.ijse.spring.controller.FourController=org.springframework.stereotype.Component
+lk.ijse.spring.controller.FveController=org.springframework.stereotype.Component
 lk.ijse.spring.controller.OneController=org.springframework.stereotype.Component
 lk.ijse.spring.controller.ThreeController=org.springframework.stereotype.Component
 lk.ijse.spring.controller.TwoController=org.springframework.stereotype.Component
