@@ -14,8 +14,4 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @ComponentScan({"lk.ijse.spring.pojo", "lk.ijse.spring.controller"})
 public class WebAppConfig {
 
-    public WebAppConfig() {
-        System.out.println("WebAppConfig: Instantiated");
-    }
-
 }

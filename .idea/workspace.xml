@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="rest-controller" />
+      <artifact name="mapping_spec" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,16 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/rest_controller.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_11_RestController/_11_RestController.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/WebAppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/config/WebAppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/config/WebRootConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/pojo/SpringBeanOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_11_RestController/src/lk/ijse/spring/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_11_RestController/src/lk/ijse/spring/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/controller/OneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mapping_spec/mapping_spec.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mapping_spec/mapping_spec.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_12_Mapping_Spec/META-INF/spring.components" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_12_Mapping_Spec/META-INF/spring.components" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_12_Mapping_Spec/lk/ijse/spring/controller/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_12_Mapping_Spec/lk/ijse/spring/pojo/SpringBeanOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/_12_Mapping_Spec/lk/ijse/spring/pojo/SpringBeanOne.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +252,7 @@
       <workItem from="1674025042649" duration="1792000" />
       <workItem from="1674100811317" duration="788000" />
       <workItem from="1674182865924" duration="11637000" />
-      <workItem from="1674200201252" duration="4412000" />
+      <workItem from="1674200201252" duration="5515000" />
     </task>
     <servers />
   </component>
