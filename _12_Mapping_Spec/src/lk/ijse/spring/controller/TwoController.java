@@ -13,9 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/two")
 public class TwoController {
 
+    //              Mapping Methods / Handler Methods
+    // /c/d/e    ->    Path Segments
+
     @GetMapping
     public String testOne1() {
-        return "Get Method Invoked 1";
+        return "Get Method Invoked 1 (Default)";
     }
 
     @GetMapping(path = "/a")
