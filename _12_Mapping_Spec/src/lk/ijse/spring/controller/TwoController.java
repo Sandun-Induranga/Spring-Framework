@@ -28,4 +28,9 @@ public class TwoController {
         return "Get Method Invoked 3";
     }
 
+    @GetMapping(path = "/c/d/e")
+    public String testOne4() {
+        return "Get Method Invoked 4";
+    }
+
 }
