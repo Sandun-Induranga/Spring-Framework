@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/two")
-public class TwoController {
+public class BController {
 
     //              Mapping Methods / Handler Methods
     // /c/d/e    ->    Path Segments

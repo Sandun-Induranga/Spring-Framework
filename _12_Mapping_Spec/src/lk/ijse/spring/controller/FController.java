@@ -5,8 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
-
 /**
  * @author : Sandun Induranga
  * @since : 0.1.0
@@ -14,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/six")
-public class SixController {
+public class FController {
 
 
 //    @GetMapping(params = {"id", "name"})

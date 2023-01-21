@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/five")
-public class FveController {
+public class EController {
 
 
 

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/three")
-public class ThreeController {
+public class CController {
 
 
     //    {id}    ->    Path Variable

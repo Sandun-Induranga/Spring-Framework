@@ -1,11 +1,8 @@
 package lk.ijse.spring.controller;
 
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.awt.*;
 
 /**
  * @author : Sandun Induranga
@@ -14,7 +11,7 @@ import java.awt.*;
 
 @RestController
 @RequestMapping("/seven")
-public class SevenController {
+public class GController {
 
     /* There are two parts in a request
     *       1. Header(Meta Data)
