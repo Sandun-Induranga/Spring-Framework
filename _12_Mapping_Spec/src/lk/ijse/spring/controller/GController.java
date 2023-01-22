@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GController {
 
     /* There are two parts in a request
-    *       1. Header(Meta Data)
+    *       1. Header(Metadata)
     *       2. Body
     * */
 
