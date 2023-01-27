@@ -1,9 +1,8 @@
 package lk.ijse.spring.controller;
 
 import lk.ijse.spring.dto.CustomerDTO;
-import lk.ijse.spring.dto.ResponseMessage;
+import lk.ijse.spring.util.ResponseUtil;
 import org.springframework.web.bind.annotation.*;
-import org.xml.sax.helpers.AttributeListImpl;
 
 import java.util.ArrayList;
 
@@ -18,7 +17,7 @@ import java.util.ArrayList;
 public class CustomerController {
 
     @GetMapping
-    public ResponseMessage getCustomers() {
+    public ResponseUtil getCustomers() {
 
         ArrayList<CustomerDTO> dtos = new ArrayList<>();
         dtos.add(new CustomerDTO("C001","Dasun","Galle",1000));
@@ -28,38 +27,37 @@ public class CustomerController {
         dtos.add(new CustomerDTO("C001","Dasun","Galle",1000));
         dtos.add(new CustomerDTO("C001","Dasun","Galle",1000));
 
-        return new ResponseMessage("200", "Successfully Loaded..!", dtos);
+        return new ResponseUtil("200", "Successfully Loaded..!", dtos);
 
     }
 
+    // @ModelAttribute not compulsory
     @PostMapping
-    public ResponseMessage saveCustomer(@ModelAttribute CustomerDTO customerDTO){
+    public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO){
 
         System.out.println(customerDTO);
         ArrayList<CustomerDTO> dtos = new ArrayList<>();
         dtos.add(customerDTO);
 
-        return new ResponseMessage("200","Successfully Added..!", dtos);
+        return new ResponseUtil("200","Successfully Added..!", dtos);
     }
 
     @PutMapping
-    public ResponseMessage updateCustomer(@RequestBody CustomerDTO customerDTO){
+    public ResponseUtil updateCustomer(@RequestBody CustomerDTO customerDTO){
 
         System.out.println(customerDTO);
         ArrayList<CustomerDTO> dtos = new ArrayList<>();
         dtos.add(customerDTO);
 
-        return new ResponseMessage("200","Successfully Updated..!", dtos);
+        return new ResponseUtil("200","Successfully Updated..!", dtos);
     }
 
     @DeleteMapping
-    public ResponseMessage deleteCustomer(@RequestBody CustomerDTO customerDTO){
+    public ResponseUtil deleteCustomer(@RequestParam String id){
 
-        System.out.println(customerDTO);
-        ArrayList<CustomerDTO> dtos = new ArrayList<>();
-        dtos.add(customerDTO);
+        System.out.println(id);
 
-        return new ResponseMessage("200","Successfully Deleted..!", dtos);
+        return new ResponseUtil("200","Successfully Deleted..!", "");
     }
 
 }
