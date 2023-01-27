@@ -53,8 +53,8 @@ public class GController {
      *
      * */
 
-    @GetMapping(produces = {MediaType.TEXT_HTML_VALUE}, consumes = {MediaType.APPLICATION_JSON_VALUE})
-//    @GetMapping(consumes = {MediaType.TEXT_HTML_VALUE})
+    //    @GetMapping(produces = {MediaType.TEXT_HTML_VALUE}, consumes = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(headers = {"Content-Type=application/json", "Accept=text/html"})
     public String testFour() {
         return "Method Invoked 4";
     }
