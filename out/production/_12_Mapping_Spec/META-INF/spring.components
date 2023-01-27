@@ -8,4 +8,5 @@ lk.ijse.spring.controller.EController=org.springframework.stereotype.Component
 lk.ijse.spring.controller.FController=org.springframework.stereotype.Component
 lk.ijse.spring.controller.GController=org.springframework.stereotype.Component
 lk.ijse.spring.controller.HController=org.springframework.stereotype.Component
+lk.ijse.spring.controller.IController=org.springframework.stereotype.Component
 lk.ijse.spring.pojo.SpringBeanOne=org.springframework.stereotype.Component

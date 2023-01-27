@@ -22,7 +22,7 @@ public class HController {
 //    }
 
     @PostMapping // For x-www form url encoded data
-    public void getCustomer(CustomerDTO customerDTO){
+    public void getCustomer(@ModelAttribute CustomerDTO customerDTO){
         System.out.println(customerDTO);
     }
 
