@@ -1,5 +1,6 @@
 package lk.ijse.spring.controller;
 
+import lk.ijse.spring.dto.CustomerDTO;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -13,11 +14,8 @@ import org.springframework.web.bind.annotation.*;
 public class HController {
 
     @PostMapping
-    public void getCustomer(@RequestParam String cusId, @RequestParam String cusName, @RequestParam String cusAddress, @RequestParam double cusSalary){
-        System.out.println(cusId);
-        System.out.println(cusName);
-        System.out.println(cusAddress);
-        System.out.println(cusSalary);
+    public void getCustomer(CustomerDTO customerDTO){
+        System.out.println(customerDTO);
     }
 
 }
