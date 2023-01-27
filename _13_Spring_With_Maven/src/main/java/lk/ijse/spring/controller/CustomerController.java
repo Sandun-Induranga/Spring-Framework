@@ -1,9 +1,11 @@
 package lk.ijse.spring.controller;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lk.ijse.spring.dto.CustomerDTO;
+import lk.ijse.spring.dto.ResponseMessage;
+import org.springframework.web.bind.annotation.*;
+import org.xml.sax.helpers.AttributeListImpl;
+
+import java.util.ArrayList;
 
 /**
  * @author : Sandun Induranga
@@ -16,8 +18,48 @@ import org.springframework.web.bind.annotation.RestController;
 public class CustomerController {
 
     @GetMapping
-    public void getCustomers() {
-        System.out.println("Get Customer Invoked");
+    public ResponseMessage getCustomers() {
+
+        ArrayList<CustomerDTO> dtos = new ArrayList<>();
+        dtos.add(new CustomerDTO("C001","Dasun","Galle",1000));
+        dtos.add(new CustomerDTO("C001","Dasun","Galle",1000));
+        dtos.add(new CustomerDTO("C001","Dasun","Galle",1000));
+        dtos.add(new CustomerDTO("C001","Dasun","Galle",1000));
+        dtos.add(new CustomerDTO("C001","Dasun","Galle",1000));
+        dtos.add(new CustomerDTO("C001","Dasun","Galle",1000));
+
+        return new ResponseMessage("200", "Successfully Loaded..!", dtos);
+
+    }
+
+    @PostMapping
+    public ResponseMessage saveCustomer(@ModelAttribute CustomerDTO customerDTO){
+
+        System.out.println(customerDTO);
+        ArrayList<CustomerDTO> dtos = new ArrayList<>();
+        dtos.add(customerDTO);
+
+        return new ResponseMessage("200","Successfully Added..!", dtos);
+    }
+
+    @PutMapping
+    public ResponseMessage updateCustomer(@RequestBody CustomerDTO customerDTO){
+
+        System.out.println(customerDTO);
+        ArrayList<CustomerDTO> dtos = new ArrayList<>();
+        dtos.add(customerDTO);
+
+        return new ResponseMessage("200","Successfully Updated..!", dtos);
+    }
+
+    @DeleteMapping
+    public ResponseMessage deleteCustomer(@RequestBody CustomerDTO customerDTO){
+
+        System.out.println(customerDTO);
+        ArrayList<CustomerDTO> dtos = new ArrayList<>();
+        dtos.add(customerDTO);
+
+        return new ResponseMessage("200","Successfully Deleted..!", dtos);
     }
 
 }
