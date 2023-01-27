@@ -17,7 +17,7 @@ public class CustomerController {
 
     @GetMapping
     public void getCustomers() {
-
+        System.out.println("Get Customer Invoked");
     }
 
 }

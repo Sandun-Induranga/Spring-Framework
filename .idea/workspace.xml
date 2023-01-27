@@ -13,14 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/config/WebAppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/config/WebRootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/controller/CustomerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,9 +108,9 @@
     <configuration name="Spring" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.84" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="mapping_spec">
+        <artifact name="_13_Spring_With_Maven:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/mapping_spec" />
+            <option name="CONTEXT_PATH" value="app" />
           </settings>
         </artifact>
       </deployment>
@@ -194,10 +188,14 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="mapping_spec" />
+          <artifact name="_13_Spring_With_Maven:war" />
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #1" />
+      <item itemvalue="Tomcat Server.Spring" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.generated-requests | #1" />
@@ -289,7 +287,7 @@
       <workItem from="1674627399116" duration="1311000" />
       <workItem from="1674669383020" duration="1496000" />
       <workItem from="1674709578264" duration="2791000" />
-      <workItem from="1674785737060" duration="15592000" />
+      <workItem from="1674785737060" duration="15903000" />
     </task>
     <servers />
   </component>
