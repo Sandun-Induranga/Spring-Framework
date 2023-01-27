@@ -18,21 +18,38 @@ public class GController {
     *       2. Body
     * */
 
-    @GetMapping
-    public String testOne() {
-        return "Method Invoked 1";
-    }
+//    @GetMapping
+//    public String testOne() {
+//        return "Method Invoked 1";
+//    }
 
-    @GetMapping(consumes = {"Application/json"})
+    @GetMapping(produces = {"Application/json"})
 //    @GetMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})
     public String testTwo() {
         return "Method Invoked 2";
     }
 
-    @GetMapping(consumes = {"text/html"})
+//    @GetMapping(consumes = {"text/html"})
+////    @GetMapping(consumes = {MediaType.TEXT_HTML_VALUE})
+//    public String testThree() {
+//        return "Method Invoked 3";
+//    }
+
+    @GetMapping(produces = {"text/html"})
 //    @GetMapping(consumes = {MediaType.TEXT_HTML_VALUE})
-    public String testThree() {
+    public String testFour() {
         return "Method Invoked 3";
     }
+
+    /*
+    *       consume    =    Content-Type
+    *       produces   =    Accept - Default (all)
+    *
+    *
+    *
+    *       Content-Type    -    What are the content type of the request body
+    *       Accept    -    What type we want from the response
+    *
+    * */
 
 }
