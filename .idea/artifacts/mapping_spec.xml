@@ -8,6 +8,9 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="spring-aop-5.3.9-javadoc" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/jackson/jackson-annotations-2.14.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/jackson/jackson-core-2.14.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/jackson/jackson-databind-2.14.1.jar" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="_12_Mapping_Spec/web/Web" />
