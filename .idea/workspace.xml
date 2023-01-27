@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="mapping_spec" />
@@ -10,11 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mapping_spec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mapping_spec.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/config/WebAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/config/WebRootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_12_Mapping_Spec/_12_Mapping_Spec.iml" beforeDir="false" afterPath="$PROJECT_DIR$/_12_Mapping_Spec/_12_Mapping_Spec.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/controller/IController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_12_Mapping_Spec/src/lk/ijse/spring/controller/IController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/mapping_spec/mapping_spec.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mapping_spec/mapping_spec.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +33,7 @@
         <option value="Interface" />
         <option value="Jsp File" />
         <option value="package.json" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -44,6 +51,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2JwGYsQRp0YiAOfqsXH6wTGMqGd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,6 +65,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -60,16 +75,16 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/libs/jackson/jackson-databind-2.14.1.jar",
+    "last_opened_file_path": "/media/sandu/0559F5C021740317/GDSE/Project_Zone/IdeaProjects/Spring-Framework/_13_Spring_With_Maven/src/main/java/lk/ijse/spring",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "d41d8cd98f00b204e9800998ecf8427e",
     "vue.rearranger.settings.migration": "true"
   },
@@ -81,11 +96,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring" />
       <recent name="$PROJECT_DIR$/libs/jackson" />
       <recent name="$PROJECT_DIR$/POS_FrontEnd" />
       <recent name="$PROJECT_DIR$/_12_Mapping_Spec/src" />
       <recent name="$PROJECT_DIR$/_11_RestController/src" />
-      <recent name="$PROJECT_DIR$/_10_Controller/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lk.ijse.spring.controller" />
@@ -274,7 +289,7 @@
       <workItem from="1674627399116" duration="1311000" />
       <workItem from="1674669383020" duration="1496000" />
       <workItem from="1674709578264" duration="2791000" />
-      <workItem from="1674785737060" duration="11409000" />
+      <workItem from="1674785737060" duration="15592000" />
     </task>
     <servers />
   </component>
