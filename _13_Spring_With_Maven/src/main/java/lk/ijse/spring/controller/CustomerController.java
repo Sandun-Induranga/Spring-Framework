@@ -37,13 +37,13 @@ public class CustomerController {
     // @ModelAttribute not compulsory
     @PostMapping
 //    @ResponseStatus(HttpStatus.CREATED) // 201
-    public ResponseUtil saveCustomer(@ModelAttribute ItemDTO itemDTO) {
+    public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO) {
 
-        System.out.println(itemDTO);
-        ArrayList<ItemDTO> dtos = new ArrayList<>();
-        dtos.add(itemDTO);
+        System.out.println(customerDTO);
+        ArrayList<CustomerDTO> dtos = new ArrayList<>();
+        dtos.add(customerDTO);
 
-        if (itemDTO.getCode().equals("C001")){
+        if (true){
             throw new RuntimeException("Customer Already Exists");
         }
 
