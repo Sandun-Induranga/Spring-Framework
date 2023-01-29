@@ -1,5 +1,6 @@
 package lk.ijse.spring.controller;
 
+import lk.ijse.spring.db.DB;
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.util.ResponseUtil;
 import org.springframework.web.bind.annotation.*;
@@ -19,16 +20,15 @@ public class CustomerController {
     @GetMapping
     public ResponseUtil getCustomers() {
 
-        ArrayList<CustomerDTO> dtos = new ArrayList<>();
+        DB.customerDB.add(new CustomerDTO("C001", "Dasun", "Galle", 10000));
+        DB.customerDB.add(new CustomerDTO("C002", "Dasuni", "Colombo", 25000));
+        DB.customerDB.add(new CustomerDTO("C003", "Ashan", "Matara", 10000));
+        DB.customerDB.add(new CustomerDTO("C004", "Ashani", "Galle", 15000));
+        DB.customerDB.add(new CustomerDTO("C005", "Ramal", "Galle", 15000));
+        DB.customerDB.add(new CustomerDTO("C006", "Ranmali", "Kandy", 15000));
 
-        dtos.add(new CustomerDTO("C001", "Dasun", "Galle", 10000));
-        dtos.add(new CustomerDTO("C002", "Dasuni", "Colombo", 25000));
-        dtos.add(new CustomerDTO("C003", "Ashan", "Matara", 10000));
-        dtos.add(new CustomerDTO("C004", "Ashani", "Galle", 15000));
-        dtos.add(new CustomerDTO("C005", "Ramal", "Galle", 15000));
-        dtos.add(new CustomerDTO("C006", "Ranmali", "Kandy", 15000));
 
-        return new ResponseUtil("200", "Successfully Loaded..!", dtos);
+        return new ResponseUtil("200", "Successfully Loaded..!", DB.customerDB);
 
     }
 
@@ -50,10 +50,8 @@ public class CustomerController {
     public ResponseUtil updateCustomer(@RequestBody CustomerDTO customerDTO) {
 
         System.out.println(customerDTO);
-        ArrayList<CustomerDTO> dtos = new ArrayList<>();
-        dtos.add(customerDTO);
 
-        return new ResponseUtil("200", "Successfully Updated..!", dtos);
+        return new ResponseUtil("200", "Successfully Updated..!", customerDTO);
     }
 
     @DeleteMapping(params = "{id}")
