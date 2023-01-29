@@ -23,12 +23,12 @@ public class CustomerController {
 
         ArrayList<CustomerDTO> dtos = new ArrayList<>();
 
-        dtos.add(new CustomerDTO("C001", "Dasun", "Galle", 1000));
-        dtos.add(new CustomerDTO("C002", "Dasun", "Galle", 1000));
-        dtos.add(new CustomerDTO("C003", "Dasun", "Galle", 1000));
-        dtos.add(new CustomerDTO("C004", "Dasun", "Galle", 1000));
-        dtos.add(new CustomerDTO("C005", "Dasun", "Galle", 1000));
-        dtos.add(new CustomerDTO("C006", "Dasun", "Galle", 1000));
+        dtos.add(new CustomerDTO("C001", "Dasun", "Galle", 10000));
+        dtos.add(new CustomerDTO("C002", "Dasuni", "Colombo", 25000));
+        dtos.add(new CustomerDTO("C003", "Ashan", "Matara", 10000));
+        dtos.add(new CustomerDTO("C004", "Ashani", "Galle", 15000));
+        dtos.add(new CustomerDTO("C005", "Ramal", "Galle", 15000));
+        dtos.add(new CustomerDTO("C006", "Ranmali", "Kandy", 15000));
 
         return new ResponseUtil("200", "Successfully Loaded..!", dtos);
 

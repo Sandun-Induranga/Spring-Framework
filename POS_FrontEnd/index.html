@@ -79,7 +79,7 @@
             <nav class="navbar">
                 <div class="container-fluid d-flex flex-column flex-lg-row">
                     <form class="d-flex flex-column flex-lg-row" role="search" method="get" id="form1">
-                        <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
+                        <input class="form-control me-2 mb-2 mb-lg-0 bg-dark text-white" type="search" placeholder="Search"
                                aria-label="Search" id="txtSearch">
                         <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -93,13 +93,13 @@
                         <button class="btn btn-outline-success me-2" type="submit">Search</button>
                     </form>
                     <!-- Add Customers Button -->
-                    <button type="button" class="btn btn-dark me-2" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-outline-primary me-2 mb-3" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop" id="btnAddCustomer">
                         Add New Customer
                     </button>
 
                     <!-- Get All Button -->
-                    <button type="submit" class="btn btn-dark" id="btnGetAll">
+                    <button type="submit" class="btn btn-outline-secondary mb-3" id="btnGetAll">
                         Get All
                     </button>
                 </div>
@@ -149,7 +149,7 @@
 
         <!-- Table -->
         <div class="row d-flex overflow-auto mb-5 h-50 col-lg-8 col-12">
-            <table class="table table-dark table-hover" id="tblCustomer">
+            <table class="table table-dark table-striped table-hover" id="tblCustomer">
                 <thead class="sticky-top">
                 <tr>
                     <th scope="col">Customer ID</th>
