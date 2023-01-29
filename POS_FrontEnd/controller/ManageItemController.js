@@ -118,7 +118,7 @@ function loadAllItems() {
 
             for (let item of res.data) {
 
-                $("#body").append(`<tr><td>` + item.code + `</td><td>` + item.name + `</td><td>` + item.price + `</td><td>` + item.qty + `</td><td><button type="button" class="border border-0 customer-edits"><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></button><button class="border border-0 customer-deletes"><i class="bi bi-trash text-danger"></i></button></td></tr>`);
+                $("#body").append(`<tr><td>` + item.code + `</td><td>` + item.name + `</td><td>` + item.price + `</td><td>` + item.qty + `</td><td><button type="button" class="border border-0 customer-edits bg-transparent"><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></button><button class="border border-0 customer-deletes bg-transparent"><i class="bi bi-trash text-danger"></i></button></td></tr>`);
             }
             alert(res.message);
             bindEditEvent();

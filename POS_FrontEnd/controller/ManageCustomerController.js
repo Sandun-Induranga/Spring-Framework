@@ -122,7 +122,7 @@ function loadAllCustomers() {
             $("#body").empty();
 
             for (let customer of res.data) {
-                $("#body").append(`<tr><td>` + customer.cusId + `</td><td>` + customer.cusName + `</td><td>` + customer.cusAddress + `</td><td>` + customer.cusSalary + `</td><td><button type="button" class="border border-0 customer-edits bg-dark"><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></button><button class="border border-0 customer-deletes bg-dark"><i class="bi bi-trash text-danger"></i></button></td></tr>`);
+                $("#body").append(`<tr><td>` + customer.cusId + `</td><td>` + customer.cusName + `</td><td>` + customer.cusAddress + `</td><td>` + customer.cusSalary + `</td><td><button type="button" class="border border-0 customer-edits bg-transparent"><i class="bi bi-pencil-fill text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></button><button class="border border-0 customer-deletes bg-transparent"><i class="bi bi-trash text-danger"></i></button></td></tr>`);
             }
 
             alert(res.message);

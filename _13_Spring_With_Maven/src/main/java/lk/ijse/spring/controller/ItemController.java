@@ -23,16 +23,14 @@ public class ItemController {
     public ResponseUtil getItems() {
 
         if (DB.itemDB.isEmpty()) {
-            DB.itemDB.add(new ItemDTO("ITM-001", "Rice", 1000, 10));
-            DB.itemDB.add(new ItemDTO("ITM-002", "Rice", 1000, 10));
-            DB.itemDB.add(new ItemDTO("ITM-003", "Rice", 1000, 10));
-            DB.itemDB.add(new ItemDTO("ITM-004", "Rice", 1000, 10));
-            DB.itemDB.add(new ItemDTO("ITM-005", "Rice", 1000, 10));
-            DB.itemDB.add(new ItemDTO("ITM-006", "Rice", 1000, 10));
+            DB.itemDB.add(new ItemDTO("ITM-001", "Rice", 550, 10));
+            DB.itemDB.add(new ItemDTO("ITM-002", "Dahl", 320, 25));
+            DB.itemDB.add(new ItemDTO("ITM-003", "Biscuit", 110, 18));
+            DB.itemDB.add(new ItemDTO("ITM-004", "Sugar", 325, 20));
+            DB.itemDB.add(new ItemDTO("ITM-005", "Soap", 60, 16));
         }
 
         System.out.println(DB.itemDB);
-
         return new ResponseUtil("200", "Successfully Loaded..!", DB.itemDB);
 
     }
