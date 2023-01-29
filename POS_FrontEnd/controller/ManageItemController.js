@@ -12,9 +12,9 @@ $("#btnSave").on("click", function () {
 
     let json = {
         code: $("#code").val(),
-        itemName: $("#itemName").val(),
-        qtyOnHand: parseInt($("#qtyOnHand").val()),
-        price: $("#price").val()
+        name: $("#itemName").val(),
+        price: $("#price").val(),
+        qty: parseInt($("#qtyOnHand").val())
     };
 
     if ($(this).text() == "Save") {

@@ -30,7 +30,6 @@ public class ItemController {
             DB.itemDB.add(new ItemDTO("ITM-005", "Soap", 60, 16));
         }
 
-        System.out.println(DB.itemDB);
         return new ResponseUtil("200", "Successfully Loaded..!", DB.itemDB);
 
     }
@@ -39,6 +38,7 @@ public class ItemController {
     @PostMapping
     public ResponseUtil saveItem(@ModelAttribute ItemDTO itemDTO) {
 
+        System.out.println(itemDTO);
         DB.itemDB.add(itemDTO);
 
         return new ResponseUtil("200", "Successfully Added..!", "");

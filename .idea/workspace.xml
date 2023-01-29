@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/POS_FrontEnd/controller/ManageItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FrontEnd/controller/ManageItemController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/controller/ItemController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -291,7 +292,7 @@
       <workItem from="1674920331799" duration="52000" />
       <workItem from="1674968253017" duration="10109000" />
       <workItem from="1674983893269" duration="4590000" />
-      <workItem from="1675008349999" duration="3473000" />
+      <workItem from="1675008349999" duration="4795000" />
     </task>
     <servers />
   </component>
