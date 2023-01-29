@@ -37,13 +37,11 @@ public class ItemController {
 
     // @ModelAttribute not compulsory
     @PostMapping
-    public ResponseUtil saveItem(@ModelAttribute CustomerDTO customerDTO) {
+    public ResponseUtil saveItem(@ModelAttribute ItemDTO itemDTO) {
 
-        System.out.println(customerDTO);
-        ArrayList<CustomerDTO> dtos = new ArrayList<>();
-        dtos.add(customerDTO);
+        DB.itemDB.add(itemDTO);
 
-        return new ResponseUtil("200", "Successfully Added..!", dtos);
+        return new ResponseUtil("200", "Successfully Added..!", "");
     }
 
     @PutMapping
