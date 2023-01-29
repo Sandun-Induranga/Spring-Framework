@@ -51,6 +51,14 @@ public class CustomerController {
     public ResponseUtil updateCustomer(@RequestBody CustomerDTO customerDTO) {
 
         System.out.println(customerDTO);
+        for (CustomerDTO dto : DB.customerDB) {
+            if (dto.getCusId().equals(customerDTO.getCusId())){
+                dto.setCusName(customerDTO.getCusName());
+                dto.setCusAddress(customerDTO.getCusAddress());
+                dto.setCusSalary(customerDTO.getCusSalary());
+                break;
+            }
+        }
 
         return new ResponseUtil("200", "Successfully Updated..!", customerDTO);
     }
