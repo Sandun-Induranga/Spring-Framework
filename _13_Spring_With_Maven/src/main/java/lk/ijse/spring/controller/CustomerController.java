@@ -40,14 +40,12 @@ public class CustomerController {
     public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO) {
 
         System.out.println(customerDTO);
-        ArrayList<CustomerDTO> dtos = new ArrayList<>();
-        dtos.add(customerDTO);
 
-        if (true){
+        if (customerDTO.getId().equals("C001")) {
             throw new RuntimeException("Customer Already Exists");
         }
 
-        return new ResponseUtil("200", "Successfully Added..!", dtos);
+        return new ResponseUtil("200", "Successfully Added..!", customerDTO);
     }
 
     @PutMapping
@@ -65,7 +63,7 @@ public class CustomerController {
 
         System.out.println(id);
 
-        if (id.equals("C001")){
+        if (id.equals("C001")) {
             throw new RuntimeException("No Such Customer Id");
         }
 

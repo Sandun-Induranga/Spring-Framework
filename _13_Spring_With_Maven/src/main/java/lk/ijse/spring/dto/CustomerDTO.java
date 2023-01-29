@@ -52,4 +52,14 @@ public class CustomerDTO {
         this.address = address;
         this.salary = salary;
     }
+
+    @Override
+    public String toString() {
+        return "CustomerDTO{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
