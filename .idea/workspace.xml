@@ -13,13 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/advicer/AppWideExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/advicer/AppWideExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/config/WebAppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FrontEnd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FrontEnd/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/target/_13_Spring_With_Maven-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/target/_13_Spring_With_Maven-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/target/_13_Spring_With_Maven-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/target/_13_Spring_With_Maven-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/target/classes/lk/ijse/spring/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/target/classes/lk/ijse/spring/controller/CustomerController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +80,8 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0074c4151f1a626e8d31f38c79947bc7&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -293,6 +290,9 @@
       <workItem from="1674669383020" duration="1496000" />
       <workItem from="1674709578264" duration="2791000" />
       <workItem from="1674785737060" duration="24270000" />
+      <workItem from="1674889631225" duration="2135000" />
+      <workItem from="1674920331799" duration="52000" />
+      <workItem from="1674968253017" duration="2491000" />
     </task>
     <servers />
   </component>
