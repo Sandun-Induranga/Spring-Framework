@@ -52,7 +52,7 @@ public class CustomerController {
 
         System.out.println(customerDTO);
         for (CustomerDTO dto : DB.customerDB) {
-            if (dto.getCusId().equals(customerDTO.getCusId())){
+            if (dto.getCusId().equals(customerDTO.getCusId())) {
                 dto.setCusName(customerDTO.getCusName());
                 dto.setCusAddress(customerDTO.getCusAddress());
                 dto.setCusSalary(customerDTO.getCusSalary());
@@ -63,12 +63,19 @@ public class CustomerController {
         return new ResponseUtil("200", "Successfully Updated..!", customerDTO);
     }
 
-    @DeleteMapping(params = "{id}")
-    public ResponseUtil deleteCustomer(@RequestParam String id) {
+    @DeleteMapping
+    public ResponseUtil deleteCustomer(@RequestParam String cusId) {
 
-        System.out.println(id);
+        for (CustomerDTO customerDTO : DB.customerDB) {
+            if (customerDTO.getCusId().equals(cusId)) {
+                DB.customerDB.remove(customerDTO);
+                break;
+            }
+        }
 
-        if (id.equals("C001")) {
+        System.out.println(cusId);
+
+        if (cusId.equals("C001")) {
             throw new RuntimeException("No Such Customer Id");
         }
 
