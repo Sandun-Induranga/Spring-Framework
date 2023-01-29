@@ -20,13 +20,14 @@ public class CustomerController {
     @GetMapping
     public ResponseUtil getCustomers() {
 
-        DB.customerDB.add(new CustomerDTO("C001", "Dasun", "Galle", 10000));
-        DB.customerDB.add(new CustomerDTO("C002", "Dasuni", "Colombo", 25000));
-        DB.customerDB.add(new CustomerDTO("C003", "Ashan", "Matara", 10000));
-        DB.customerDB.add(new CustomerDTO("C004", "Ashani", "Galle", 15000));
-        DB.customerDB.add(new CustomerDTO("C005", "Ramal", "Galle", 15000));
-        DB.customerDB.add(new CustomerDTO("C006", "Ranmali", "Kandy", 15000));
-
+        if (DB.customerDB.isEmpty()) {
+            DB.customerDB.add(new CustomerDTO("C001", "Dasun", "Galle", 10000));
+            DB.customerDB.add(new CustomerDTO("C002", "Dasuni", "Colombo", 25000));
+            DB.customerDB.add(new CustomerDTO("C003", "Ashan", "Matara", 10000));
+            DB.customerDB.add(new CustomerDTO("C004", "Ashani", "Galle", 15000));
+            DB.customerDB.add(new CustomerDTO("C005", "Ramal", "Galle", 15000));
+            DB.customerDB.add(new CustomerDTO("C006", "Ranmali", "Kandy", 15000));
+        }
 
         return new ResponseUtil("200", "Successfully Loaded..!", DB.customerDB);
 
@@ -37,13 +38,13 @@ public class CustomerController {
 //    @ResponseStatus(HttpStatus.CREATED) // 201
     public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO) {
 
-        System.out.println(customerDTO);
+        DB.customerDB.add(customerDTO);
 
         if (customerDTO.getCusId().equals("C001")) {
             throw new RuntimeException("Customer Already Exists");
         }
 
-        return new ResponseUtil("200", "Successfully Added..!", customerDTO);
+        return new ResponseUtil("200", "Successfully Added..!", "");
     }
 
     @PutMapping
