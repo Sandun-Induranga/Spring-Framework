@@ -38,20 +38,23 @@ public class ItemController {
     @PostMapping
     public ResponseUtil saveItem(@ModelAttribute ItemDTO itemDTO) {
 
-        System.out.println(itemDTO);
         DB.itemDB.add(itemDTO);
 
         return new ResponseUtil("200", "Successfully Added..!", "");
     }
 
     @PutMapping
-    public ResponseUtil updateItem(@RequestBody CustomerDTO customerDTO) {
+    public ResponseUtil updateItem(@RequestBody ItemDTO itemDTO) {
 
-        System.out.println(customerDTO);
-        ArrayList<CustomerDTO> dtos = new ArrayList<>();
-        dtos.add(customerDTO);
+        ItemDTO searchItem = searchItem(itemDTO.getCode());
 
-        return new ResponseUtil("200", "Successfully Updated..!", dtos);
+        if (searchItem!=null){
+            searchItem.setName(itemDTO.getName());
+            searchItem.setPrice(itemDTO.getPrice());
+            searchItem.setQty(itemDTO.getQty());
+        }
+
+        return new ResponseUtil("200", "Successfully Updated..!", "");
     }
 
     @DeleteMapping(params = "{id}")
@@ -60,6 +63,17 @@ public class ItemController {
         System.out.println(id);
 
         return new ResponseUtil("200", "Successfully Deleted..!", "");
+    }
+
+    public ItemDTO searchItem(String code) {
+
+        for (ItemDTO itemDTO : DB.itemDB) {
+            if (itemDTO.getCode().equals(code)) {
+                return itemDTO;
+            }
+        }
+        return null;
+
     }
 
 }
