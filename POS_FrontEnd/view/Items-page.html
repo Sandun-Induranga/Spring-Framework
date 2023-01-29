@@ -25,11 +25,11 @@
 <main class="d-flex row align-items-center justify-content-center">
 
     <section
-            class="d-flex flex-column full-height h-75 col-md-10 bg-white shadow-lg rounded-5 align-items-center justify-content-between">
+            class="d-flex flex-column full-height h-75 col-md-10 bg-white shadow-lg rounded-5 align-items-center justify-content-between" style="background: #1a1e21 !important;">
 
         <!-- Nav bar -->
         <div class="row w-100">
-            <nav class="navbar navbar-expand-lg bg-transparent border-bottom sticky-top">
+            <nav class="navbar navbar-expand-lg bg-transparent border-bottom sticky-top navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><i class="bi bi-back red-text"></i> Business <span
                             class="red-text">Name</span></a>
@@ -95,45 +95,45 @@
 
 
                     <!-- Add Items Button -->
-                    <button type="button" class="btn btn-dark me-2" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop" id="btnAddItem">
                         Add New Item
                     </button>
 
                     <!-- Get All Button -->
-                    <button type="button" class="btn btn-dark" id="btnGetAll">
+                    <button type="button" class="btn btn-outline-secondary" id="btnGetAll">
                         Get All
                     </button>
 
                     <!-- Modal -->
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
+                        <div class="modal-dialog bg-dark text-white">
+                            <div class="modal-content bg-dark">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="staticBackdropLabel">Add Customers</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                 </div>
 
                                 <!-- Form -->
                                 <div class="d-flex justify-content-center">
-                                    <form class="w-75" id="itemForm">
+                                    <form class="w-75 bg-dark" id="itemForm">
                                         <div class="mb-3">
                                             <label for="code" class="form-label">Item Code</label>
-                                            <input type="text" class="form-control" id="code" name="code">
+                                            <input type="text" class="form-control bg-dark" id="code" name="code">
                                         </div>
                                         <div class="mb-3">
                                             <label for="itemName" class="form-label">Item Name</label>
-                                            <input type="text" class="form-control" id="itemName" name="itemName">
+                                            <input type="text" class="form-control bg-dark" id="itemName" name="itemName">
                                         </div>
                                         <div class="mb-3">
                                             <label for="price" class="form-label">Price</label>
-                                            <input type="text" class="form-control" id="price" name="price">
+                                            <input type="text" class="form-control bg-dark" id="price" name="price">
                                         </div>
                                         <div class="mb-3">
                                             <label for="qtyOnHand" class="form-label">Quantity On Hand</label>
-                                            <input type="text" class="form-control" id="qtyOnHand" name="qtyOnHand">
+                                            <input type="text" class="form-control bg-dark" id="qtyOnHand" name="qtyOnHand">
                                         </div>
                                     </form>
                                 </div>
@@ -153,8 +153,8 @@
 
         <!-- Table -->
         <div class="d-flex overflow-auto h-50 w-75 mb-5">
-            <table class="table table-striped table-hover" id="tblItem">
-                <thead class="table-dark sticky-top">
+            <table class="table table-striped table-hover table-dark" id="tblItem">
+                <thead class="sticky-top">
                 <tr>
                     <th scope="col">Item Code</th>
                     <th scope="col">Item Name</th>
