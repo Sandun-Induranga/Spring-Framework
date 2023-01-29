@@ -36,7 +36,7 @@ public class CustomerController {
 //    @ResponseStatus(HttpStatus.CREATED) // 201
     public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO) {
 
-        if (getCustomer(customerDTO.getCusId()) != null) {
+        if (searchCustomer(customerDTO.getCusId()) != null) {
             throw new RuntimeException("Customer Already Exists");
         } else {
             DB.customerDB.add(customerDTO);
@@ -48,17 +48,16 @@ public class CustomerController {
     @PutMapping
     public ResponseUtil updateCustomer(@RequestBody CustomerDTO customerDTO) {
 
-        System.out.println(customerDTO);
-        for (CustomerDTO dto : DB.customerDB) {
-            if (dto.getCusId().equals(customerDTO.getCusId())) {
-                dto.setCusName(customerDTO.getCusName());
-                dto.setCusAddress(customerDTO.getCusAddress());
-                dto.setCusSalary(customerDTO.getCusSalary());
-                break;
-            }
+        CustomerDTO customer = searchCustomer(customerDTO.getCusId());
+
+        if (searchCustomer(customerDTO.getCusId()) != null) {
+            customer.setCusName(customerDTO.getCusName());
+            customer.setCusAddress(customerDTO.getCusAddress());
+            customer.setCusSalary(customerDTO.getCusSalary());
         }
 
         return new ResponseUtil("200", "Successfully Updated..!", customerDTO);
+
     }
 
     @DeleteMapping
@@ -80,7 +79,7 @@ public class CustomerController {
         return new ResponseUtil("200", "Successfully Deleted..!", "");
     }
 
-    public CustomerDTO getCustomer(String id) {
+    public CustomerDTO searchCustomer(String id) {
 
         for (CustomerDTO customerDTO : DB.customerDB) {
             if (customerDTO.getCusId().equals(id)) {
