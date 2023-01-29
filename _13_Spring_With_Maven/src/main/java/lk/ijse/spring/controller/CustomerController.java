@@ -5,8 +5,6 @@ import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.util.ResponseUtil;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-
 /**
  * @author : Sandun Induranga
  * @since : 0.1.0
@@ -38,10 +36,10 @@ public class CustomerController {
 //    @ResponseStatus(HttpStatus.CREATED) // 201
     public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO) {
 
-        DB.customerDB.add(customerDTO);
-
-        if (customerDTO.getCusId().equals("C001")) {
+        if (getCustomer(customerDTO.getCusId()) != null) {
             throw new RuntimeException("Customer Already Exists");
+        } else {
+            DB.customerDB.add(customerDTO);
         }
 
         return new ResponseUtil("200", "Successfully Added..!", "");
@@ -80,6 +78,17 @@ public class CustomerController {
         }
 
         return new ResponseUtil("200", "Successfully Deleted..!", "");
+    }
+
+    public CustomerDTO getCustomer(String id) {
+
+        for (CustomerDTO customerDTO : DB.customerDB) {
+            if (customerDTO.getCusId().equals(id)) {
+                return customerDTO;
+            }
+        }
+        return null;
+
     }
 
 }
