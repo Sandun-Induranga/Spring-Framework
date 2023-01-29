@@ -13,8 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POS_FrontEnd/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FrontEnd/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/POS_FrontEnd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FrontEnd/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -291,7 +289,7 @@
       <workItem from="1674785737060" duration="24270000" />
       <workItem from="1674889631225" duration="2135000" />
       <workItem from="1674920331799" duration="52000" />
-      <workItem from="1674968253017" duration="3040000" />
+      <workItem from="1674968253017" duration="3358000" />
     </task>
     <servers />
   </component>
