@@ -1,6 +1,7 @@
 package lk.ijse.spring.controller;
 
 
+import lk.ijse.spring.db.DB;
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.dto.ItemDTO;
 import lk.ijse.spring.util.ResponseUtil;
@@ -21,15 +22,18 @@ public class ItemController {
     @GetMapping
     public ResponseUtil getItems() {
 
-        ArrayList<ItemDTO> dtos = new ArrayList<>();
-        dtos.add(new ItemDTO("ITM-001","Rice",10,1000));
-        dtos.add(new ItemDTO("ITM-001","Rice",10,1000));
-        dtos.add(new ItemDTO("ITM-001","Rice",10,1000));
-        dtos.add(new ItemDTO("ITM-001","Rice",10,1000));
-        dtos.add(new ItemDTO("ITM-001","Rice",10,1000));
-        dtos.add(new ItemDTO("ITM-001","Rice",10,1000));
+        if (DB.itemDB.isEmpty()){
+            DB.itemDB.add(new ItemDTO("ITM-001","Rice",10,1000));
+            DB.itemDB.add(new ItemDTO("ITM-002","Rice",10,1000));
+            DB.itemDB.add(new ItemDTO("ITM-003","Rice",10,1000));
+            DB.itemDB.add(new ItemDTO("ITM-004","Rice",10,1000));
+            DB.itemDB.add(new ItemDTO("ITM-005","Rice",10,1000));
+            DB.itemDB.add(new ItemDTO("ITM-006","Rice",10,1000));
+        }
 
-        return new ResponseUtil("200", "Successfully Loaded..!", dtos);
+        System.out.println(DB.itemDB);
+
+        return new ResponseUtil("200", "Successfully Loaded..!", DB.itemDB);
 
     }
 

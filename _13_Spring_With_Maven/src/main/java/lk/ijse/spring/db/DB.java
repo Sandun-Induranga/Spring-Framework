@@ -12,6 +12,6 @@ import java.util.ArrayList;
 public class DB {
 
     public static ArrayList<CustomerDTO> customerDB = new ArrayList<>();
-    public static ArrayList<ItemDTO> ItemDB = new ArrayList<>();
+    public static ArrayList<ItemDTO> itemDB = new ArrayList<>();
 
 }
