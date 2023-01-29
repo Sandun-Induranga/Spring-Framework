@@ -22,13 +22,13 @@ public class ItemController {
     @GetMapping
     public ResponseUtil getItems() {
 
-        if (DB.itemDB.isEmpty()){
-            DB.itemDB.add(new ItemDTO("ITM-001","Rice",10,1000));
-            DB.itemDB.add(new ItemDTO("ITM-002","Rice",10,1000));
-            DB.itemDB.add(new ItemDTO("ITM-003","Rice",10,1000));
-            DB.itemDB.add(new ItemDTO("ITM-004","Rice",10,1000));
-            DB.itemDB.add(new ItemDTO("ITM-005","Rice",10,1000));
-            DB.itemDB.add(new ItemDTO("ITM-006","Rice",10,1000));
+        if (DB.itemDB.isEmpty()) {
+            DB.itemDB.add(new ItemDTO("ITM-001", "Rice", 1000, 10));
+            DB.itemDB.add(new ItemDTO("ITM-002", "Rice", 1000, 10));
+            DB.itemDB.add(new ItemDTO("ITM-003", "Rice", 1000, 10));
+            DB.itemDB.add(new ItemDTO("ITM-004", "Rice", 1000, 10));
+            DB.itemDB.add(new ItemDTO("ITM-005", "Rice", 1000, 10));
+            DB.itemDB.add(new ItemDTO("ITM-006", "Rice", 1000, 10));
         }
 
         System.out.println(DB.itemDB);
@@ -39,31 +39,31 @@ public class ItemController {
 
     // @ModelAttribute not compulsory
     @PostMapping
-    public ResponseUtil saveItem(@ModelAttribute CustomerDTO customerDTO){
+    public ResponseUtil saveItem(@ModelAttribute CustomerDTO customerDTO) {
 
         System.out.println(customerDTO);
         ArrayList<CustomerDTO> dtos = new ArrayList<>();
         dtos.add(customerDTO);
 
-        return new ResponseUtil("200","Successfully Added..!", dtos);
+        return new ResponseUtil("200", "Successfully Added..!", dtos);
     }
 
     @PutMapping
-    public ResponseUtil updateItem(@RequestBody CustomerDTO customerDTO){
+    public ResponseUtil updateItem(@RequestBody CustomerDTO customerDTO) {
 
         System.out.println(customerDTO);
         ArrayList<CustomerDTO> dtos = new ArrayList<>();
         dtos.add(customerDTO);
 
-        return new ResponseUtil("200","Successfully Updated..!", dtos);
+        return new ResponseUtil("200", "Successfully Updated..!", dtos);
     }
 
     @DeleteMapping(params = "{id}")
-    public ResponseUtil deleteItem(@RequestParam String id){
+    public ResponseUtil deleteItem(@RequestParam String id) {
 
         System.out.println(id);
 
-        return new ResponseUtil("200","Successfully Deleted..!", "");
+        return new ResponseUtil("200", "Successfully Deleted..!", "");
     }
 
 }
