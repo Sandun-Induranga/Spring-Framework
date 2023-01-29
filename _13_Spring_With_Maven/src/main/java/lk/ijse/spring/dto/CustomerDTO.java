@@ -6,60 +6,60 @@ package lk.ijse.spring.dto;
  **/
 
 public class CustomerDTO {
-    String id;
-    String name;
-    String address;
-    double salary;
+    String cusId;
+    String cusName;
+    String cusAddress;
+    double cusSalary;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
+    public CustomerDTO(String cusId, String cusName, String cusAddress, double cusSalary) {
+        this.cusId = cusId;
+        this.cusName = cusName;
+        this.cusAddress = cusAddress;
+        this.cusSalary = cusSalary;
     }
 
     public CustomerDTO() {
     }
 
-    public CustomerDTO(String id, String name, String address, double salary) {
-        this.id = id;
-        this.name = name;
-        this.address = address;
-        this.salary = salary;
+    public String getCusId() {
+        return cusId;
+    }
+
+    public void setCusId(String cusId) {
+        this.cusId = cusId;
+    }
+
+    public String getCusName() {
+        return cusName;
+    }
+
+    public void setCusName(String cusName) {
+        this.cusName = cusName;
+    }
+
+    public String getCusAddress() {
+        return cusAddress;
+    }
+
+    public void setCusAddress(String cusAddress) {
+        this.cusAddress = cusAddress;
+    }
+
+    public double getCusSalary() {
+        return cusSalary;
+    }
+
+    public void setCusSalary(double cusSalary) {
+        this.cusSalary = cusSalary;
     }
 
     @Override
     public String toString() {
         return "CustomerDTO{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", salary=" + salary +
+                "cusId='" + cusId + '\'' +
+                ", cusName='" + cusName + '\'' +
+                ", cusAddress='" + cusAddress + '\'' +
+                ", cusSalary=" + cusSalary +
                 '}';
     }
 }

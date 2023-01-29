@@ -12,9 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/controller/CustomerController.java" afterDir="false" />
-    </list>
+    <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -289,7 +287,7 @@
       <workItem from="1674785737060" duration="24270000" />
       <workItem from="1674889631225" duration="2135000" />
       <workItem from="1674920331799" duration="52000" />
-      <workItem from="1674968253017" duration="5758000" />
+      <workItem from="1674968253017" duration="6476000" />
     </task>
     <servers />
   </component>
