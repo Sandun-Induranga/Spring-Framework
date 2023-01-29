@@ -1,9 +1,7 @@
 package lk.ijse.spring.controller;
 
 import lk.ijse.spring.dto.CustomerDTO;
-import lk.ijse.spring.dto.ItemDTO;
 import lk.ijse.spring.util.ResponseUtil;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -41,7 +39,7 @@ public class CustomerController {
 
         System.out.println(customerDTO);
 
-        if (customerDTO.getId().equals("C001")) {
+        if (customerDTO.getCusId().equals("C001")) {
             throw new RuntimeException("Customer Already Exists");
         }
 
