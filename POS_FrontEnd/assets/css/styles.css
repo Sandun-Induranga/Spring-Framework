@@ -21,6 +21,10 @@ i:hover{
     cursor: pointer;
 }
 
+::-webkit-input-placeholder {
+    color: white !important;
+}
+
 @media all and (min-width: 0) and (max-width: 768px){
     .full-height{
         height: 100vh !important;
