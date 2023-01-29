@@ -38,9 +38,12 @@ public class ItemController {
     @PostMapping
     public ResponseUtil saveItem(@ModelAttribute ItemDTO itemDTO) {
 
+        if (searchItem(itemDTO.getCode())!=null){
+            throw new RuntimeException("Item Already Exists");
+        }
         DB.itemDB.add(itemDTO);
-
         return new ResponseUtil("200", "Successfully Added..!", "");
+
     }
 
     @PutMapping
@@ -48,19 +51,26 @@ public class ItemController {
 
         ItemDTO searchItem = searchItem(itemDTO.getCode());
 
-        if (searchItem!=null){
+        if (searchItem != null) {
             searchItem.setName(itemDTO.getName());
             searchItem.setPrice(itemDTO.getPrice());
             searchItem.setQty(itemDTO.getQty());
+        }else {
+            throw new RuntimeException("No Such Item");
         }
 
         return new ResponseUtil("200", "Successfully Updated..!", "");
     }
 
-    @DeleteMapping(params = "{id}")
-    public ResponseUtil deleteItem(@RequestParam String id) {
+    @DeleteMapping
+    public ResponseUtil deleteItem(String code) {
 
-        System.out.println(id);
+        ItemDTO searchItem = searchItem(code);
+        if (searchItem != null) {
+            DB.itemDB.remove(searchItem);
+        }else {
+            throw new RuntimeException("No Such Item Code");
+        }
 
         return new ResponseUtil("200", "Successfully Deleted..!", "");
     }
