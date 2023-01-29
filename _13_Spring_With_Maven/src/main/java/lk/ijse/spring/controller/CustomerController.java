@@ -50,7 +50,7 @@ public class CustomerController {
 
         CustomerDTO customer = searchCustomer(customerDTO.getCusId());
 
-        if (searchCustomer(customerDTO.getCusId()) != null) {
+        if (customer != null) {
             customer.setCusName(customerDTO.getCusName());
             customer.setCusAddress(customerDTO.getCusAddress());
             customer.setCusSalary(customerDTO.getCusSalary());
@@ -63,20 +63,16 @@ public class CustomerController {
     @DeleteMapping
     public ResponseUtil deleteCustomer(@RequestParam String cusId) {
 
-        for (CustomerDTO customerDTO : DB.customerDB) {
-            if (customerDTO.getCusId().equals(cusId)) {
-                DB.customerDB.remove(customerDTO);
-                break;
-            }
-        }
+        CustomerDTO customer = searchCustomer(cusId);
 
-        System.out.println(cusId);
-
-        if (cusId.equals("C001")) {
+        if (customer != null) {
+            DB.customerDB.remove(customer);
+        }else {
             throw new RuntimeException("No Such Customer Id");
         }
 
         return new ResponseUtil("200", "Successfully Deleted..!", "");
+
     }
 
     public CustomerDTO searchCustomer(String id) {
