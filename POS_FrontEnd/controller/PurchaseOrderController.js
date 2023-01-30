@@ -208,8 +208,10 @@ $("#btnPlaceOrder").on("click", function () {
 
     let json = {
         cusId: cusId,
-        items: cartDB,
-        total: $("#total").val()
+        cost:$("#total").val(),
+        orderDate:"",
+        orderDetails: cartDB,
+        // total: $("#total").val()
     };
 
     $.ajax({
@@ -217,6 +219,7 @@ $("#btnPlaceOrder").on("click", function () {
         method: "post",
         data: JSON.stringify(json),
         dataType: "json",
+        contentType: "application/json",
         success: function (res) {
             alert(res.message);
             console.log(json)

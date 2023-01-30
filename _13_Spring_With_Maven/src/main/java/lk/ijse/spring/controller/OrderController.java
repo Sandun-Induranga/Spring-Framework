@@ -4,6 +4,8 @@ import lk.ijse.spring.dto.OrderDTO;
 import lk.ijse.spring.util.ResponseUtil;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 /**
  * @author : Sandun Induranga
  * @since : 0.1.0
@@ -29,7 +31,7 @@ public class OrderController {
     }
 
     @PostMapping
-    public ResponseUtil placeOrder(OrderDTO orderDTO) {
+    public ResponseUtil placeOrder(@RequestBody OrderDTO orderDTO) {
 
         System.out.println(orderDTO);
         return new ResponseUtil("200", "Order Placed..!", orderDTO);
