@@ -54,7 +54,7 @@ function loadAllItemCodesInPurchaseOrder() {
 
 $("#cmbCustomerId").change(function () {
     $.ajax({
-        url: baseUrl + "order?option=customer&cusId=" + $("#cmbCustomerId").val(),
+        url: baseUrl + "order?cusId=" + $("#cmbCustomerId").val(),
         method: "get",
         dataType: "json",
         contentType: "application/json",
@@ -71,12 +71,11 @@ $("#cmbCustomerId").change(function () {
             console.log(error)
         }
     });
-    console.log(baseUrl)
 });
 
 $("#cmbItemCode").change(function () {
     $.ajax({
-        url: baseUrl + "order?option=item&code=" + $("#cmbItemCode").val(),
+        url: baseUrl + "order?code=" + $("#cmbItemCode").val(),
         type: "get",
         dataType: "json",
         success: function (res) {
