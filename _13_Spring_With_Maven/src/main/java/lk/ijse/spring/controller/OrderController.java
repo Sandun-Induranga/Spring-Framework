@@ -21,18 +21,7 @@ public class OrderController {
     @GetMapping(params = {"cusId"})
     public ResponseUtil getAllOrders(String cusId) {
 
-        return new ResponseUtil("200", "Successfully Loaded..!", searchCustomer(cusId));
-
-    }
-
-    public CustomerDTO searchCustomer(String id) {
-
-        for (CustomerDTO customerDTO : DB.customerDB) {
-            if (customerDTO.getCusId().equals(id)) {
-                return customerDTO;
-            }
-        }
-        return null;
+        return new ResponseUtil("200", "Successfully Loaded..!", new CustomerController().searchCustomer(cusId));
 
     }
 
