@@ -4,20 +4,20 @@ package lk.ijse.spring.dto;
  * @author : Sandun Induranga
  * @since : 0.1.0
  **/
-public class OrderDTO {
+public class OrderDetailDTO {
     String orderId;
     String code;
     double price;
     int qty;
 
-    public OrderDTO(String orderId, String code, double price, int qty) {
+    public OrderDetailDTO(String orderId, String code, double price, int qty) {
         this.orderId = orderId;
         this.code = code;
         this.price = price;
         this.qty = qty;
     }
 
-    public OrderDTO() {
+    public OrderDetailDTO() {
     }
 
     public String getOrderId() {
