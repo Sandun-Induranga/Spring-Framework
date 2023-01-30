@@ -19,7 +19,7 @@ function loadAllCustomerIdsInPurchaseOrder() {
             $("#cmbCustomerId").append(`<option disabled selected hidden>Customer ID</option>`);
 
             for (let customer of res.data) {
-                $("#cmbCustomerId").append(`<option>${customer.id}</option>`);
+                $("#cmbCustomerId").append(`<option>${customer.cusId}</option>`);
             }
 
             alert(res.message);
