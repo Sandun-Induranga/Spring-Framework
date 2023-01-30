@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class OrderController {
 
-    @GetMapping
-    public ResponseUtil getAllOrders() {
-
-        return new ResponseUtil("200", "Successfully Loaded..!", DB.customerDB);
-
-    }
+//    @GetMapping
+//    public ResponseUtil getAllOrders() {
+//
+//        return new ResponseUtil("200", "Successfully Loaded..!", DB.customerDB);
+//
+//    }
 
 }
