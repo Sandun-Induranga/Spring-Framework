@@ -19,9 +19,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
 
     @GetMapping(params = {"cusId"})
-    public ResponseUtil getAllOrders(String cusId) {
+    public ResponseUtil getCustomer(String cusId) {
 
         return new ResponseUtil("200", "Successfully Loaded..!", new CustomerController().searchCustomer(cusId));
+
+    }
+
+    @GetMapping(params = {"code"})
+    public ResponseUtil getItem(String code) {
+
+        return new ResponseUtil("200", "Successfully Loaded..!", new ItemController().searchItem(code));
 
     }
 
