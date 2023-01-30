@@ -208,8 +208,8 @@ $("#btnPlaceOrder").on("click", function () {
 
     let json = {
         cusId: cusId,
-        cost:$("#total").val(),
-        orderDate:"",
+        cost: $("#total").val(),
+        orderDate: new Date().toISOString().slice(0, 10),
         orderDetails: cartDB,
         // total: $("#total").val()
     };

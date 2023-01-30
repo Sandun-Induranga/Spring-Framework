@@ -2,9 +2,11 @@ package lk.ijse.spring.db;
 
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.dto.ItemDTO;
+import lk.ijse.spring.dto.OrderDTO;
 import lk.ijse.spring.dto.OrderDetailDTO;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author : Sandun Induranga
@@ -12,8 +14,9 @@ import java.util.ArrayList;
  **/
 public class DB {
 
-    public static ArrayList<CustomerDTO> customerDB = new ArrayList<>();
-    public static ArrayList<ItemDTO> itemDB = new ArrayList<>();
-    public static ArrayList<OrderDetailDTO> orderDB = new ArrayList<>();
+    public static List<CustomerDTO> customerDB = new ArrayList<>();
+    public static List<ItemDTO> itemDB = new ArrayList<>();
+    public static List<OrderDTO> orderDB = new ArrayList<>();
+    public static List<OrderDetailDTO> orderDetailDB = new ArrayList<>();
 
 }

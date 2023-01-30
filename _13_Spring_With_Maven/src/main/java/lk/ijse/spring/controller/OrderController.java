@@ -2,9 +2,11 @@ package lk.ijse.spring.controller;
 
 import lk.ijse.spring.db.DB;
 import lk.ijse.spring.dto.OrderDTO;
+import lk.ijse.spring.dto.OrderDetailDTO;
 import lk.ijse.spring.util.ResponseUtil;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -34,7 +36,17 @@ public class OrderController {
     @PostMapping
     public ResponseUtil placeOrder(@RequestBody OrderDTO orderDTO) {
 
-        orderDTO.setOrderId(generateNewOrderId());
+        String orderId = generateNewOrderId();
+        orderDTO.setOrderId(orderId);
+
+        List<OrderDetailDTO> orderDetails = orderDTO.getOrderDetails();
+        for (OrderDetailDTO orderDetail : orderDetails) {
+            orderDetail.setOrderId(orderId);
+            DB.orderDetailDB.add(orderDetail);
+        }
+
+        DB.orderDB.add(orderDTO);
+
         System.out.println(orderDTO);
         return new ResponseUtil("200", "Order Placed..!", orderDTO);
 
