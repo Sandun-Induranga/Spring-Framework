@@ -1,6 +1,9 @@
 package lk.ijse.spring.controller;
 
+import lk.ijse.spring.db.DB;
+import lk.ijse.spring.util.ResponseUtil;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,6 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class OrderDetailController {
 
+    @GetMapping
+    public ResponseUtil getAllOrderDetails() {
 
+        return new ResponseUtil("200", "Successfully Loaded..!", DB.orderDetailDB);
+
+    }
 
 }
