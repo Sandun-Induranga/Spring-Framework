@@ -17,7 +17,7 @@ function loadAllOrderDetails() {
             $("#body").empty();
 
             for (let detail of res.data) {
-                $("#body").append(`<tr><td>` + detail.orderId + `</td><td>` + detail.code + `</td><td>` + detail.price + `</td><td>` + detail.qty + `</tr>`);
+                $("#body").append(`<tr><td>` + detail.orderId + `</td><td>` + detail.code + `</td><td>` + detail.unitPrice + `</td><td>` + detail.qty + `</tr>`);
             }
 
             alert(res.message);
