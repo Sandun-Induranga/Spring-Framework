@@ -25,11 +25,11 @@
 <main class="d-flex row align-items-center justify-content-center">
 
     <section
-            class="d-flex flex-column full-height h-75 col-md-10 bg-white shadow-lg rounded-5 align-items-center justify-content-between">
+            class="d-flex flex-column full-height h-75 col-md-10 bg-white shadow-lg rounded-5 align-items-center justify-content-between" style="background: #1a1e21 !important;">
 
         <!-- Nav bar -->
         <div class="row w-100">
-            <nav class="navbar navbar-expand-lg bg-transparent border-bottom sticky-top">
+            <nav class="navbar navbar-expand-lg bg-transparent border-bottom sticky-top navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><i class="bi bi-back red-text"></i> Business <span
                             class="red-text">Name</span></a>
@@ -80,7 +80,7 @@
             <nav class="navbar">
                 <div class="container-fluid d-flex flex-column flex-lg-row">
                     <form class="d-flex flex-column flex-lg-row" role="search">
-                        <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
+                        <input class="form-control me-2 mb-2 mb-lg-0 bg-dark text-white" type="search" placeholder="Search"
                                aria-label="Search" id="txtOrderSearch">
                         <select class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
                                 id="orderSearch"
@@ -96,8 +96,8 @@
 
         <!-- Table -->
         <div class="row d-flex overflow-auto mb-5 h-50 col-lg-8 col-12">
-            <table class="table table-striped table-hover" id="tblCustomer">
-                <thead class="table-dark sticky-top">
+            <table class="table table-striped table-hover table-dark" id="tblCustomer">
+                <thead class="sticky-top">
                 <tr>
                     <th scope="col">Order ID</th>
                     <th scope="col">Code</th>

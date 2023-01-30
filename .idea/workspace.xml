@@ -13,7 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_13_Spring_With_Maven/src/main/java/lk/ijse/spring/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POS_FrontEnd/view/Order-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FrontEnd/view/Order-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.general",
     "spring.configuration.checksum": "0074c4151f1a626e8d31f38c79947bc7",
     "vue.rearranger.settings.migration": "true"
   },
@@ -294,7 +295,7 @@
       <workItem from="1675008349999" duration="12537000" />
       <workItem from="1675053784824" duration="9800000" />
       <workItem from="1675073663319" duration="4836000" />
-      <workItem from="1675087852145" duration="4463000" />
+      <workItem from="1675087852145" duration="7358000" />
     </task>
     <servers />
   </component>
