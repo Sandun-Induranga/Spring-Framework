@@ -12,10 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POS_FrontEnd/view/Purchase-order-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FrontEnd/view/Purchase-order-page.html" afterDir="false" />
-    </list>
+    <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -294,7 +291,7 @@
       <workItem from="1674983893269" duration="4590000" />
       <workItem from="1675008349999" duration="12537000" />
       <workItem from="1675053784824" duration="9800000" />
-      <workItem from="1675073663319" duration="1660000" />
+      <workItem from="1675073663319" duration="2002000" />
     </task>
     <servers />
   </component>
