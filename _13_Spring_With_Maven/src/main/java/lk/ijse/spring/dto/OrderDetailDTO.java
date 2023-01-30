@@ -7,13 +7,13 @@ package lk.ijse.spring.dto;
 public class OrderDetailDTO {
     String orderId;
     String code;
-    double price;
+    double unitPrice;
     int qty;
 
-    public OrderDetailDTO(String orderId, String code, double price, int qty) {
+    public OrderDetailDTO(String orderId, String code, double unitPrice, int qty) {
         this.orderId = orderId;
         this.code = code;
-        this.price = price;
+        this.unitPrice = unitPrice;
         this.qty = qty;
     }
 
@@ -36,12 +36,12 @@ public class OrderDetailDTO {
         this.code = code;
     }
 
-    public double getPrice() {
-        return price;
+    public double getUnitPrice() {
+        return unitPrice;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setUnitPrice(double unitPrice) {
+        this.unitPrice = unitPrice;
     }
 
     public int getQty() {
@@ -57,7 +57,7 @@ public class OrderDetailDTO {
         return "OrderDTO{" +
                 "orderId='" + orderId + '\'' +
                 ", code='" + code + '\'' +
-                ", price=" + price +
+                ", unitPrice=" + unitPrice +
                 ", qty=" + qty +
                 '}';
     }
