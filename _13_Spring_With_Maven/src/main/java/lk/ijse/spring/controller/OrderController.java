@@ -32,7 +32,7 @@ public class OrderController {
     public ResponseUtil placeOrder(OrderDTO orderDTO) {
 
         System.out.println(orderDTO);
-        return new ResponseUtil("200", "Successfully Loaded..!", orderDTO);
+        return new ResponseUtil("200", "Order Placed..!", orderDTO);
 
     }
 
