@@ -2,12 +2,9 @@ package lk.ijse.spring.controller;
 
 
 import lk.ijse.spring.db.DB;
-import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.dto.ItemDTO;
 import lk.ijse.spring.util.ResponseUtil;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
 
 /**
  * @author : Sandun Induranga
@@ -38,7 +35,7 @@ public class ItemController {
     @PostMapping
     public ResponseUtil saveItem(@ModelAttribute ItemDTO itemDTO) {
 
-        if (searchItem(itemDTO.getCode())!=null){
+        if (searchItem(itemDTO.getCode()) != null) {
             throw new RuntimeException("Item Already Exists");
         }
         DB.itemDB.add(itemDTO);
@@ -55,7 +52,7 @@ public class ItemController {
             searchItem.setName(itemDTO.getName());
             searchItem.setPrice(itemDTO.getPrice());
             searchItem.setQty(itemDTO.getQty());
-        }else {
+        } else {
             throw new RuntimeException("No Such Item");
         }
 
@@ -68,7 +65,7 @@ public class ItemController {
         ItemDTO searchItem = searchItem(code);
         if (searchItem != null) {
             DB.itemDB.remove(searchItem);
-        }else {
+        } else {
             throw new RuntimeException("No Such Item Code");
         }
 
