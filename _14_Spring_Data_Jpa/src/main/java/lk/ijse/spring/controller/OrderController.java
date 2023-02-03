@@ -1,5 +1,6 @@
 package lk.ijse.spring.controller;
 
+import lk.ijse.spring.Service.OrderService;
 import lk.ijse.spring.db.DB;
 import lk.ijse.spring.dto.OrderDTO;
 import lk.ijse.spring.dto.OrderDetailDTO;
@@ -27,46 +28,26 @@ import java.util.Optional;
 public class OrderController {
 
     @Autowired
-    CustomerRepo customerRepo;
-
-    @Autowired
-    ItemRepo itemRepo;
-
-    @Autowired
-    OrderRepo orderRepo;
-
-    @Autowired
-    ModelMapper mapper;
+    OrderService orderService;
 
     @GetMapping(params = {"cusId"})
     public ResponseUtil getCustomer(String cusId) {
 
-        return new ResponseUtil("200", "Successfully Loaded..!", customerRepo.findById(cusId).get());
+        return new ResponseUtil("200", "Successfully Loaded..!", orderService.getCustomer(cusId));
 
     }
 
     @GetMapping(params = {"code"})
     public ResponseUtil getItem(String code) {
 
-        return new ResponseUtil("200", "Successfully Loaded..!", itemRepo.findById(code).get());
+        return new ResponseUtil("200", "Successfully Loaded..!", orderService.getItem(code));
 
     }
 
     @PostMapping
     public ResponseUtil placeOrder(@RequestBody OrderDTO orderDTO) {
 
-        String orderId = generateNewOrderId();
-        orderDTO.setOrderId(orderId);
-        orderRepo.save(mapper.map(orderDTO, Orders.class));
-
-        List<OrderDetailDTO> orderDetails = orderDTO.getOrderDetails();
-        for (OrderDetailDTO orderDetail : orderDetails) {
-            Item item = itemRepo.findById(orderDetail.getOrderId()).get();
-            item.setQty(item.getQty() - orderDetail.getQty());
-            itemRepo.save(item);
-        }
-
-        System.out.println(orderDTO);
+        orderService.placeOrder(orderDTO);
         return new ResponseUtil("200", "Order Placed..!", "");
 
     }

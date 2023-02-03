@@ -13,10 +13,10 @@ $("#btnSaveCustomer").on("click", function () {
     let customer = new Customer($("#cusId").val(), $("#cusName").val(), $("#cusAddress").val(), $("#cusSalary").val());
 
     let json = {
-        cusId: customer.getCusId(),
-        cusName: customer.getCusName(),
-        cusAddress: customer.getCusAddress(),
-        cusSalary: customer.getCusSalary()
+        id: customer.getCusId(),
+        name: customer.getCusName(),
+        address: customer.getCusAddress(),
+        salary: customer.getCusSalary()
     };
 
     if ($(this).text() == "Save") {

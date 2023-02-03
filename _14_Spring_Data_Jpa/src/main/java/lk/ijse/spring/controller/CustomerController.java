@@ -1,5 +1,6 @@
 package lk.ijse.spring.controller;
 
+import lk.ijse.spring.Service.CustomerService;
 import lk.ijse.spring.db.DB;
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.entity.Customer;
@@ -26,15 +27,12 @@ import java.util.Optional;
 public class CustomerController {
 
     @Autowired
-    private CustomerRepo repo;
-
-    @Autowired
-    private ModelMapper mapper;
+    private CustomerService service;
 
     @GetMapping
     public ResponseUtil getCustomers() {
 
-        return new ResponseUtil("OK", "Successfully Loaded..!", mapper.map(repo.findAll(), new TypeToken<ArrayList<CustomerDTO>>() {}.getType()));
+        return new ResponseUtil("OK", "Successfully Loaded..!", service.getAllCustomer());
 
     }
 
@@ -42,11 +40,7 @@ public class CustomerController {
     @ResponseStatus(HttpStatus.CREATED) // 201
     public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO) {
 
-        if (repo.existsById(customerDTO.getId())) {
-            throw new RuntimeException("Customer Already Exists..!");
-        }
-        repo.save(mapper.map(customerDTO, Customer.class));
-
+        service.saveCustomer(customerDTO);
         return new ResponseUtil("OK", "Successfully Added..!", "");
 
     }
@@ -54,31 +48,16 @@ public class CustomerController {
     @PutMapping
     public ResponseUtil updateCustomer(@RequestBody CustomerDTO customerDTO) {
 
-        if (repo.existsById(customerDTO.getId())) {
-            repo.save(mapper.map(customerDTO, Customer.class));
-        } else {
-            throw new RuntimeException("Customer Not Exists..!");
-        }
-        return new ResponseUtil("200", "Successfully Updated..!", customerDTO);
+        service.updateCustomer(customerDTO);
+        return new ResponseUtil("200", "Successfully Updated..!", "");
 
     }
 
     @DeleteMapping
     public ResponseUtil deleteCustomer(@RequestParam String cusId) {
 
-        if (repo.existsById(cusId)) {
-            repo.deleteById(cusId);
-        } else {
-            throw new RuntimeException("Customer Not Exists..!");
-        }
-
+        service.deleteCustomer(cusId);
         return new ResponseUtil("OK", "Successfully Deleted..!", "");
-
-    }
-
-    public CustomerDTO searchCustomer(String id) {
-
-        return mapper.map(repo.findById(id).get(), CustomerDTO.class);
 
     }
 

@@ -12,7 +12,7 @@ public interface CustomerService {
 
     public void saveCustomer(CustomerDTO customerDTO);
     public void updateCustomer(CustomerDTO customerDTO);
-    public void deleteCustomer(CustomerDTO customerDTO);
+    public void deleteCustomer(String cusId);
     public ArrayList<CustomerDTO> getAllCustomer();
 
 }

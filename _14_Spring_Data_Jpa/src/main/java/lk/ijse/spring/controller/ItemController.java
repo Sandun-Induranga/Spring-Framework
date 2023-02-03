@@ -1,6 +1,7 @@
 package lk.ijse.spring.controller;
 
 
+import lk.ijse.spring.Service.ItemService;
 import lk.ijse.spring.db.DB;
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.dto.ItemDTO;
@@ -25,28 +26,20 @@ import java.util.ArrayList;
 @CrossOrigin
 public class ItemController {
 
-
     @Autowired
-    private ItemRepo repo;
-
-    @Autowired
-    private ModelMapper mapper;
+    ItemService itemService;
 
     @GetMapping
     public ResponseUtil getItems() {
 
-        return new ResponseUtil("OK", "Successfully Loaded..!", mapper.map(repo.findAll(), new TypeToken<ArrayList<ItemDTO>>() {}.getType()));
+        return new ResponseUtil("OK", "Successfully Loaded..!", itemService.getAllItems());
 
     }
 
     @PostMapping
     public ResponseUtil saveItem(@ModelAttribute ItemDTO itemDTO) {
 
-        if (repo.existsById(itemDTO.getCode())) {
-            throw new RuntimeException("Item Already Exists..!");
-        }
-        repo.save(mapper.map(itemDTO, Item.class));
-
+        itemService.saveItem(itemDTO);
         return new ResponseUtil("OK", "Successfully Added..!", "");
 
     }
@@ -54,35 +47,15 @@ public class ItemController {
     @PutMapping
     public ResponseUtil updateItem(@RequestBody ItemDTO itemDTO) {
 
-        if (repo.existsById(itemDTO.getCode())) {
-            repo.save(mapper.map(itemDTO, Item.class));
-        } else {
-            throw new RuntimeException("Item Not Exists..!");
-        }
+        itemService.updateItem(itemDTO);
         return new ResponseUtil("200", "Successfully Updated..!", "");
     }
 
     @DeleteMapping
     public ResponseUtil deleteItem(String code) {
 
-        if (repo.existsById(code)) {
-            repo.deleteById(code);
-        } else {
-            throw new RuntimeException("Item Not Exists..!");
-        }
-
+        itemService.deleteItem(code);
         return new ResponseUtil("OK", "Successfully Deleted..!", "");
-
-    }
-
-    public ItemDTO searchItem(String code) {
-
-        for (ItemDTO itemDTO : DB.itemDB) {
-            if (itemDTO.getCode().equals(code)) {
-                return itemDTO;
-            }
-        }
-        return null;
 
     }
 

@@ -21,9 +21,6 @@ import org.modelmapper.ModelMapper;
 @ComponentScan(basePackageClasses = {CustomerController.class, ItemController.class, OrderController.class, OrderDetailController.class, AppWideExceptionHandler.class})
 public class WebAppConfig {
 
-    @Bean
-    public ModelMapper modelMapper() {
-        return new ModelMapper();
-    }
+
 
 }
