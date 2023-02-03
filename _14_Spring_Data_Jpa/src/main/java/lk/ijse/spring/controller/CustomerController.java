@@ -5,10 +5,13 @@ import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.entity.Customer;
 import lk.ijse.spring.repo.CustomerRepo;
 import lk.ijse.spring.util.ResponseUtil;
+import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,11 +27,15 @@ public class CustomerController {
     @Autowired
     private CustomerRepo repo;
 
+    @Autowired
+    private ModelMapper mapper;
+
     @GetMapping
     public ResponseUtil getCustomers() {
 
         List<Customer> customers = repo.findAll();
-        return new ResponseUtil("OK", "Successfully Loaded..!", customers);
+        return new ResponseUtil("OK", "Successfully Loaded..!", mapper.map(customers, new TypeToken<ArrayList<CustomerDTO>>() {
+        }.getType()));
 
     }
 
@@ -39,9 +46,9 @@ public class CustomerController {
 
         if (repo.existsById(customerDTO.getCusId())) {
             throw new RuntimeException("Customer Already Exists..!");
-        } else {
-            repo.save(new Customer(customerDTO.getCusId(), customerDTO.getCusName(), customerDTO.getCusAddress(), customerDTO.getCusSalary()));
         }
+        repo.save(mapper.map(customerDTO, Customer.class));
+
         return new ResponseUtil("OK", "Successfully Added..!", "");
 
     }
@@ -50,7 +57,7 @@ public class CustomerController {
     public ResponseUtil updateCustomer(@RequestBody CustomerDTO customerDTO) {
 
         if (repo.existsById(customerDTO.getCusId())) {
-            repo.save(new Customer(customerDTO.getCusId(), customerDTO.getCusName(), customerDTO.getCusAddress(), customerDTO.getCusSalary()));
+            repo.save(mapper.map(customerDTO, Customer.class));
         } else {
             throw new RuntimeException("Customer Not Exists..!");
         }
