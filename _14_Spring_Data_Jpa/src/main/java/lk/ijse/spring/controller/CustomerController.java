@@ -37,28 +37,23 @@ public class CustomerController {
     @ResponseStatus(HttpStatus.CREATED) // 201
     public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO) {
 
-//        if (searchCustomer(customerDTO.getCusId()) != null) {
-//            throw new RuntimeException("Customer Already Exists");
-//        } else {
-//            DB.customerDB.add(customerDTO);
-//        }
-
-        repo.save(new Customer(customerDTO.getCusId(),customerDTO.getCusName(),customerDTO.getCusAddress(),customerDTO.getCusSalary()));
-
+        if (repo.existsById(customerDTO.getCusId())) {
+            throw new RuntimeException("Customer Already Exists..!");
+        } else {
+            repo.save(new Customer(customerDTO.getCusId(), customerDTO.getCusName(), customerDTO.getCusAddress(), customerDTO.getCusSalary()));
+        }
         return new ResponseUtil("OK", "Successfully Added..!", "");
+
     }
 
     @PutMapping
     public ResponseUtil updateCustomer(@RequestBody CustomerDTO customerDTO) {
 
-        CustomerDTO customer = searchCustomer(customerDTO.getCusId());
-
-        if (customer != null) {
-            customer.setCusName(customerDTO.getCusName());
-            customer.setCusAddress(customerDTO.getCusAddress());
-            customer.setCusSalary(customerDTO.getCusSalary());
+        if (repo.existsById(customerDTO.getCusId())) {
+            repo.save(new Customer(customerDTO.getCusId(), customerDTO.getCusName(), customerDTO.getCusAddress(), customerDTO.getCusSalary()));
+        } else {
+            throw new RuntimeException("Customer Not Exists..!");
         }
-
         return new ResponseUtil("200", "Successfully Updated..!", customerDTO);
 
     }
@@ -66,15 +61,13 @@ public class CustomerController {
     @DeleteMapping
     public ResponseUtil deleteCustomer(@RequestParam String cusId) {
 
-        CustomerDTO customer = searchCustomer(cusId);
-
-        if (customer != null) {
-            DB.customerDB.remove(customer);
-        }else {
-            throw new RuntimeException("No Such Customer Id");
+        if (repo.existsById(cusId)) {
+            repo.deleteById(cusId);
+        } else {
+            throw new RuntimeException("Customer Not Exists..!");
         }
 
-        return new ResponseUtil("200", "Successfully Deleted..!", "");
+        return new ResponseUtil("OK", "Successfully Deleted..!", "");
 
     }
 

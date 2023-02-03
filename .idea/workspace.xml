@@ -14,10 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/config/JPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/config/JPAConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/config/JPAConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/config/JPAConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/controller/CustomerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/controller/CustomerController.class" afterDir="false" />
     </list>
@@ -316,7 +314,7 @@
       <workItem from="1675268601671" duration="1822000" />
       <workItem from="1675353574353" duration="29000" />
       <workItem from="1675358764832" duration="764000" />
-      <workItem from="1675392085618" duration="10307000" />
+      <workItem from="1675392085618" duration="10929000" />
     </task>
     <servers />
   </component>
