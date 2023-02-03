@@ -1,5 +1,9 @@
 package lk.ijse.spring.config;
 
+import lk.ijse.spring.controller.CustomerController;
+import lk.ijse.spring.controller.ItemController;
+import lk.ijse.spring.controller.OrderController;
+import lk.ijse.spring.controller.OrderDetailController;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -11,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("lk.ijse.spring")
+@ComponentScan(basePackageClasses = {CustomerController.class, ItemController.class, OrderController.class, OrderDetailController.class})
 public class WebAppConfig {
 
 }
