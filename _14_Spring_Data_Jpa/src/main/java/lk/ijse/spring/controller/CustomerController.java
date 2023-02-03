@@ -39,6 +39,7 @@ public class CustomerController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED) // 201
     public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO) {
+        System.out.println(customerDTO);
 
         service.saveCustomer(customerDTO);
         return new ResponseUtil("OK", "Successfully Added..!", "");
