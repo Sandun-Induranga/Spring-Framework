@@ -3,7 +3,7 @@
  * @since : 0.1.0
  **/
 
-const baseUrl = "http://localhost:8080/app/";
+const baseUrl = "http://localhost:8080/spring_jpa/";
 let cartDB = [];
 
 loadAllCustomerIdsInPurchaseOrder();
@@ -19,7 +19,7 @@ function loadAllCustomerIdsInPurchaseOrder() {
             $("#cmbCustomerId").append(`<option disabled selected hidden>Customer ID</option>`);
 
             for (let customer of res.data) {
-                $("#cmbCustomerId").append(`<option>${customer.cusId}</option>`);
+                $("#cmbCustomerId").append(`<option>${customer.id}</option>`);
             }
 
             alert(res.message);
@@ -60,9 +60,9 @@ $("#cmbCustomerId").change(function () {
         contentType: "application/json",
         success: function (res) {
 
-            $("#cusName").val(res.data.cusName);
-            $("#cusAddress").val(res.data.cusAddress);
-            $("#cusSalary").val(res.data.cusSalary);
+            $("#cusName").val(res.data.name);
+            $("#cusAddress").val(res.data.address);
+            $("#cusSalary").val(res.data.salary);
 
         },
         error: function (error) {
@@ -115,8 +115,8 @@ function addToCart() {
         var cart = {
             code: code,
             name: name,
-            qtyOnHand: qtyOnHand,
-            unitPrice: unitPrice,
+            unitPrice: qtyOnHand,
+            price: unitPrice,
             qty: qty,
             total: parseFloat(unitPrice) * parseInt(qty)
         }

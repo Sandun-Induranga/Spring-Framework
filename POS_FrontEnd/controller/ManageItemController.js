@@ -3,7 +3,7 @@
  * @since : 0.1.0
  **/
 
-const baseUrl = "http://localhost:8080/app/";
+const baseUrl = "http://localhost:8080/spring_jpa/";
 
 loadAllItems();
 
@@ -13,8 +13,8 @@ $("#btnSave").on("click", function () {
     let json = {
         code: $("#code").val(),
         name: $("#itemName").val(),
-        price: $("#price").val(),
-        qty: parseInt($("#qtyOnHand").val())
+        qty: parseInt($("#qtyOnHand").val()),
+        price: $("#price").val()
     };
 
     if ($(this).text() == "Save") {

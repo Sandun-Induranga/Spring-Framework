@@ -2,9 +2,18 @@ package lk.ijse.spring.controller;
 
 
 import lk.ijse.spring.db.DB;
+import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.dto.ItemDTO;
+import lk.ijse.spring.entity.Customer;
+import lk.ijse.spring.entity.Item;
+import lk.ijse.spring.repo.ItemRepo;
 import lk.ijse.spring.util.ResponseUtil;
+import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 
 /**
  * @author : Sandun Induranga
@@ -16,60 +25,54 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 public class ItemController {
 
+
+    @Autowired
+    private ItemRepo repo;
+
+    @Autowired
+    private ModelMapper mapper;
+
     @GetMapping
     public ResponseUtil getItems() {
 
-        if (DB.itemDB.isEmpty()) {
-            DB.itemDB.add(new ItemDTO("ITM-001", "Rice", 550, 10));
-            DB.itemDB.add(new ItemDTO("ITM-002", "Dahl", 320, 25));
-            DB.itemDB.add(new ItemDTO("ITM-003", "Biscuit", 110, 18));
-            DB.itemDB.add(new ItemDTO("ITM-004", "Sugar", 325, 20));
-            DB.itemDB.add(new ItemDTO("ITM-005", "Soap", 60, 16));
-        }
-
-        return new ResponseUtil("200", "Successfully Loaded..!", DB.itemDB);
+        return new ResponseUtil("OK", "Successfully Loaded..!", mapper.map(repo.findAll(), new TypeToken<ArrayList<ItemDTO>>() {}.getType()));
 
     }
 
-    // @ModelAttribute not compulsory
     @PostMapping
     public ResponseUtil saveItem(@ModelAttribute ItemDTO itemDTO) {
 
-        if (searchItem(itemDTO.getCode()) != null) {
-            throw new RuntimeException("Item Already Exists");
+        if (repo.existsById(itemDTO.getCode())) {
+            throw new RuntimeException("Item Already Exists..!");
         }
-        DB.itemDB.add(itemDTO);
-        return new ResponseUtil("200", "Successfully Added..!", "");
+        repo.save(mapper.map(itemDTO, Item.class));
+
+        return new ResponseUtil("OK", "Successfully Added..!", "");
 
     }
 
     @PutMapping
     public ResponseUtil updateItem(@RequestBody ItemDTO itemDTO) {
 
-        ItemDTO searchItem = searchItem(itemDTO.getCode());
-
-        if (searchItem != null) {
-            searchItem.setName(itemDTO.getName());
-            searchItem.setPrice(itemDTO.getPrice());
-            searchItem.setQty(itemDTO.getQty());
+        if (repo.existsById(itemDTO.getCode())) {
+            repo.save(mapper.map(itemDTO, Item.class));
         } else {
-            throw new RuntimeException("No Such Item");
+            throw new RuntimeException("Item Not Exists..!");
         }
-
         return new ResponseUtil("200", "Successfully Updated..!", "");
     }
 
     @DeleteMapping
     public ResponseUtil deleteItem(String code) {
 
-        ItemDTO searchItem = searchItem(code);
-        if (searchItem != null) {
-            DB.itemDB.remove(searchItem);
+        if (repo.existsById(code)) {
+            repo.deleteById(code);
         } else {
-            throw new RuntimeException("No Such Item Code");
+            throw new RuntimeException("Item Not Exists..!");
         }
 
-        return new ResponseUtil("200", "Successfully Deleted..!", "");
+        return new ResponseUtil("OK", "Successfully Deleted..!", "");
+
     }
 
     public ItemDTO searchItem(String code) {

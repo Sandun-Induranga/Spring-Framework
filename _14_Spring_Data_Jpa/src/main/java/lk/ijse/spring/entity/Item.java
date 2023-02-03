@@ -20,9 +20,10 @@ import javax.persistence.Id;
 @ToString
 public class Item {
     @Id
-    private String code;
-    private String description;
-    private int qtyOnHand;
-    private double unitPrice;
+    String code;
+    String name;
+
+    int qty;
+    double price;
 
 }

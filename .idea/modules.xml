@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/POS_FrontEnd.iml" filepath="$PROJECT_DIR$/POS_FrontEnd.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Spring-Framework.iml" filepath="$PROJECT_DIR$/.idea/Spring-Framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/_01_Hello_Spring/_01_Hello_Spring.iml" filepath="$PROJECT_DIR$/_01_Hello_Spring/_01_Hello_Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/_02_Bean_Life_Cycle/_02_Bean_Life_Cycle.iml" filepath="$PROJECT_DIR$/_02_Bean_Life_Cycle/_02_Bean_Life_Cycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/_03_Spring_Bean_Scopes/_03_Spring_Bean_Scopes.iml" filepath="$PROJECT_DIR$/_03_Spring_Bean_Scopes/_03_Spring_Bean_Scopes.iml" />

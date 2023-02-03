@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author : Sandun Induranga
@@ -77,12 +78,7 @@ public class CustomerController {
 
     public CustomerDTO searchCustomer(String id) {
 
-        for (CustomerDTO customerDTO : DB.customerDB) {
-            if (customerDTO.getId().equals(id)) {
-                return customerDTO;
-            }
-        }
-        return null;
+        return mapper.map(repo.findById(id).get(), CustomerDTO.class);
 
     }
 

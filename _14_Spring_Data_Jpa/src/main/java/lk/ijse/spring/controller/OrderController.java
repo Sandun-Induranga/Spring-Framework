@@ -3,7 +3,10 @@ package lk.ijse.spring.controller;
 import lk.ijse.spring.db.DB;
 import lk.ijse.spring.dto.OrderDTO;
 import lk.ijse.spring.dto.OrderDetailDTO;
+import lk.ijse.spring.repo.CustomerRepo;
+import lk.ijse.spring.repo.ItemRepo;
 import lk.ijse.spring.util.ResponseUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,17 +21,23 @@ import java.util.List;
 @CrossOrigin
 public class OrderController {
 
+    @Autowired
+    CustomerRepo customerRepo;
+
+    @Autowired
+    ItemRepo itemRepo;
+
     @GetMapping(params = {"cusId"})
     public ResponseUtil getCustomer(String cusId) {
 
-        return new ResponseUtil("200", "Successfully Loaded..!", new CustomerController().searchCustomer(cusId));
+        return new ResponseUtil("200", "Successfully Loaded..!", customerRepo.findById(cusId).get());
 
     }
 
     @GetMapping(params = {"code"})
     public ResponseUtil getItem(String code) {
 
-        return new ResponseUtil("200", "Successfully Loaded..!", new ItemController().searchItem(code));
+        return new ResponseUtil("200", "Successfully Loaded..!", itemRepo.findById(code).get());
 
     }
 
