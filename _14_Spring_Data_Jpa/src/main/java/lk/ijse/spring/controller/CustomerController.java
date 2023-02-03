@@ -33,18 +33,15 @@ public class CustomerController {
     @GetMapping
     public ResponseUtil getCustomers() {
 
-        List<Customer> customers = repo.findAll();
-        return new ResponseUtil("OK", "Successfully Loaded..!", mapper.map(customers, new TypeToken<ArrayList<CustomerDTO>>() {
-        }.getType()));
+        return new ResponseUtil("OK", "Successfully Loaded..!", mapper.map(repo.findAll(), new TypeToken<ArrayList<CustomerDTO>>() {}.getType()));
 
     }
 
-    // @ModelAttribute not compulsory
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED) // 201
     public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO) {
 
-        if (repo.existsById(customerDTO.getCusId())) {
+        if (repo.existsById(customerDTO.getId())) {
             throw new RuntimeException("Customer Already Exists..!");
         }
         repo.save(mapper.map(customerDTO, Customer.class));
@@ -56,7 +53,7 @@ public class CustomerController {
     @PutMapping
     public ResponseUtil updateCustomer(@RequestBody CustomerDTO customerDTO) {
 
-        if (repo.existsById(customerDTO.getCusId())) {
+        if (repo.existsById(customerDTO.getId())) {
             repo.save(mapper.map(customerDTO, Customer.class));
         } else {
             throw new RuntimeException("Customer Not Exists..!");
@@ -81,7 +78,7 @@ public class CustomerController {
     public CustomerDTO searchCustomer(String id) {
 
         for (CustomerDTO customerDTO : DB.customerDB) {
-            if (customerDTO.getCusId().equals(id)) {
+            if (customerDTO.getId().equals(id)) {
                 return customerDTO;
             }
         }
