@@ -62,10 +62,13 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void placeOrder(OrderDTO orderDTO) {
         String orderId = "OID002";
+        List<OrderDetailDTO> orderDetails = orderDTO.getOrderDetails();
         orderDTO.setOrderId(orderId);
+        for (OrderDetailDTO orderDetail : orderDetails) {
+            orderDetail.setOrderId(orderId);
+        }
         orderRepo.save(mapper.map(orderDTO, Orders.class));
 
-        List<OrderDetailDTO> orderDetails = orderDTO.getOrderDetails();
         for (OrderDetailDTO orderDetail : orderDetails) {
             Item item = itemRepo.findById(orderDetail.getOrderId()).get();
             item.setQty(item.getQty() - orderDetail.getQty());

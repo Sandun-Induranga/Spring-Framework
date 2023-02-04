@@ -32,24 +32,17 @@ public class OrderController {
 
     @GetMapping(params = {"cusId"})
     public ResponseUtil getCustomer(String cusId) {
-
         return new ResponseUtil("200", "Successfully Loaded..!", orderService.getCustomer(cusId));
-
     }
 
     @GetMapping(params = {"code"})
     public ResponseUtil getItem(String code) {
-
         return new ResponseUtil("200", "Successfully Loaded..!", orderService.getItem(code));
-
     }
 
     @PostMapping
     public ResponseUtil placeOrder(@RequestBody OrderDTO orderDTO) {
-
-        orderService.placeOrder(orderDTO);
         return new ResponseUtil("200", "Order Placed..!", "");
-
     }
 
     public String generateNewOrderId() {

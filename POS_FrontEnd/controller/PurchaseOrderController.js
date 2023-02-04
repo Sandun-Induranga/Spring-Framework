@@ -207,6 +207,7 @@ $("#btnPlaceOrder").on("click", function () {
     let cusId = $("#cmbCustomerId").val();
 
     let json = {
+        orderId:"",
         cusId: cusId,
         cost: $("#total").val(),
         orderDate: new Date().toISOString().slice(0, 10),
