@@ -1,20 +1,11 @@
 package lk.ijse.spring.controller;
 
-import lk.ijse.spring.Service.CustomerService;
-import lk.ijse.spring.db.DB;
+import lk.ijse.spring.service.CustomerService;
 import lk.ijse.spring.dto.CustomerDTO;
-import lk.ijse.spring.entity.Customer;
-import lk.ijse.spring.repo.CustomerRepo;
 import lk.ijse.spring.util.ResponseUtil;
-import org.modelmapper.ModelMapper;
-import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 /**
  * @author : Sandun Induranga

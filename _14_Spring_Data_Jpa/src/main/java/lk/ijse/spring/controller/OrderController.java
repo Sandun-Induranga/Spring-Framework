@@ -1,21 +1,11 @@
 package lk.ijse.spring.controller;
 
-import lk.ijse.spring.Service.OrderService;
+import lk.ijse.spring.service.OrderService;
 import lk.ijse.spring.db.DB;
 import lk.ijse.spring.dto.OrderDTO;
-import lk.ijse.spring.dto.OrderDetailDTO;
-import lk.ijse.spring.entity.Item;
-import lk.ijse.spring.entity.Orders;
-import lk.ijse.spring.repo.CustomerRepo;
-import lk.ijse.spring.repo.ItemRepo;
-import lk.ijse.spring.repo.OrderRepo;
 import lk.ijse.spring.util.ResponseUtil;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
 
 /**
  * @author : Sandun Induranga
