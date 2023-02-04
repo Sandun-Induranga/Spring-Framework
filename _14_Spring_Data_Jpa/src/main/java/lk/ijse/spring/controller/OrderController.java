@@ -42,7 +42,10 @@ public class OrderController {
 
     @PostMapping
     public ResponseUtil placeOrder(@RequestBody OrderDTO orderDTO) {
+
+        orderService.placeOrder(orderDTO);
         return new ResponseUtil("200", "Order Placed..!", "");
+
     }
 
     public String generateNewOrderId() {

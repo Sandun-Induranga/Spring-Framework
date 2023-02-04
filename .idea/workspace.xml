@@ -13,8 +13,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/978885a5-9da4-4aa8-bc52-4b2b1497ac19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/978885a5-9da4-4aa8-bc52-4b2b1497ac19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/POS_FrontEnd/controller/PurchaseOrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/POS_FrontEnd/controller/PurchaseOrderController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/Service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/Service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/dto/OrderDetailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/dto/OrderDetailDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/entity/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/entity/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/entity/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/entity/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/Service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/Service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/entity/OrderDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/entity/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/_14_Spring_Data_Jpa-1.0-SNAPSHOT/WEB-INF/classes/lk/ijse/spring/entity/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/Service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/Service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/entity/OrderDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/entity/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/entity/Orders.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +102,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;92d6f44909a6e6e3c844f88948c36399&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -324,12 +340,23 @@
       <workItem from="1675444703582" duration="3395000" />
       <workItem from="1675448375366" duration="3174000" />
       <workItem from="1675486571360" duration="92000" />
-      <workItem from="1675486673401" duration="2404000" />
+      <workItem from="1675486673401" duration="6326000" />
+      <workItem from="1675506765577" duration="1256000" />
+      <workItem from="1675519571818" duration="698000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="maven-packaging:war" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

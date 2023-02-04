@@ -1261,77 +1261,65 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="320" parent="302" name="itemCode">
-      <DasType>varchar(255)|0s</DasType>
-      <Position>5</Position>
-    </column>
-    <column id="321" parent="302" name="oid">
-      <DasType>varchar(255)|0s</DasType>
-      <Position>6</Position>
-    </column>
-    <foreign-key id="322" parent="302" name="FKtogd3d0kvb3mreeh4pn7qox19">
-      <ColNames>itemCode</ColNames>
+    <foreign-key id="320" parent="302" name="FK26lto3e7r908hd9mfo65p67ve">
+      <ColNames>code</ColNames>
       <RefColNames>code</RefColNames>
       <RefTableName>Item</RefTableName>
     </foreign-key>
-    <foreign-key id="323" parent="302" name="FKegjg56ouq9xygppdrfv37sudf">
-      <ColNames>oid</ColNames>
+    <foreign-key id="321" parent="302" name="FK1bkbmugxwo4sv5toahjp2r43x">
+      <ColNames>orderId</ColNames>
       <RefColNames>orderId</RefColNames>
       <RefTableName>Orders</RefTableName>
     </foreign-key>
-    <index id="324" parent="302" name="PRIMARY">
+    <index id="322" parent="302" name="PRIMARY">
       <ColNames>code
 orderId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="325" parent="302" name="FKtogd3d0kvb3mreeh4pn7qox19">
-      <ColNames>itemCode</ColNames>
+    <index id="323" parent="302" name="FK1bkbmugxwo4sv5toahjp2r43x">
+      <ColNames>orderId</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="326" parent="302" name="FKegjg56ouq9xygppdrfv37sudf">
-      <ColNames>oid</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="327" parent="302" name="PRIMARY">
+    <key id="324" parent="302" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="328" parent="303" name="orderId">
+    <column id="325" parent="303" name="orderId">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="329" parent="303" name="cost">
+    <column id="326" parent="303" name="cost">
       <DasType>double|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="330" parent="303" name="orderDate">
+    <column id="327" parent="303" name="orderDate">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="331" parent="303" name="customerId">
+    <column id="328" parent="303" name="cusId">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="332" parent="303" name="FK1afv963odd6tgw8i6fttjc0f">
-      <ColNames>customerId</ColNames>
+    <foreign-key id="329" parent="303" name="FKciwxjipvj0suo71gvwjs97q0i">
+      <ColNames>cusId</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>Customer</RefTableName>
     </foreign-key>
-    <index id="333" parent="303" name="PRIMARY">
+    <index id="330" parent="303" name="PRIMARY">
       <ColNames>orderId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="334" parent="303" name="FK1afv963odd6tgw8i6fttjc0f">
-      <ColNames>customerId</ColNames>
+    <index id="331" parent="303" name="FKciwxjipvj0suo71gvwjs97q0i">
+      <ColNames>cusId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="335" parent="303" name="PRIMARY">
+    <key id="332" parent="303" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

@@ -28,12 +28,12 @@ public class OrderDetail {
     int qty;
 
     @ManyToOne
-    @JoinColumn(name = "oid",referencedColumnName = "orderId",insertable = false,updatable = false)
+    @JoinColumn(name = "orderId",referencedColumnName = "orderId",insertable = false,updatable = false)
     private Orders order;
 
     //Out-verse
     @ManyToOne
-    @JoinColumn(name = "itemCode",referencedColumnName = "code",insertable = false,updatable = false)
+    @JoinColumn(name = "code",referencedColumnName = "code",insertable = false,updatable = false)
     private Item item;
 
 }

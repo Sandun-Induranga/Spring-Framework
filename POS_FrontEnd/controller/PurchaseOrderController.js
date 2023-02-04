@@ -114,9 +114,9 @@ function addToCart() {
     } else if (cartItem == null) {
         var cart = {
             code: code,
+            orderId: "",
             name: name,
-            unitPrice: qtyOnHand,
-            price: unitPrice,
+            unitPrice: unitPrice,
             qty: qty,
             total: parseFloat(unitPrice) * parseInt(qty)
         }

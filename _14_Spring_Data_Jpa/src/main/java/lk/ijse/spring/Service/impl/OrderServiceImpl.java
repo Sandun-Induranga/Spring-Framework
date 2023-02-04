@@ -67,12 +67,14 @@ public class OrderServiceImpl implements OrderService {
         for (OrderDetailDTO orderDetail : orderDetails) {
             orderDetail.setOrderId(orderId);
         }
-        orderRepo.save(mapper.map(orderDTO, Orders.class));
+        Orders order = mapper.map(orderDTO, Orders.class);
+        System.out.println(orderDTO);
+        orderRepo.save(order);
 
-        for (OrderDetailDTO orderDetail : orderDetails) {
-            Item item = itemRepo.findById(orderDetail.getOrderId()).get();
-            item.setQty(item.getQty() - orderDetail.getQty());
-            itemRepo.save(item);
-        }
+//        for (OrderDetailDTO orderDetail : orderDetails) {
+//            Item item = itemRepo.findById(orderDetail.getOrderId()).get();
+//            item.setQty(item.getQty() - orderDetail.getQty());
+//            itemRepo.save(item);
+//        }
     }
 }

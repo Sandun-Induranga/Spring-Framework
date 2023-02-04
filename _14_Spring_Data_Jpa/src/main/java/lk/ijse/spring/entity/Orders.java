@@ -23,7 +23,7 @@ public class Orders {
     private String orderId;
 
     @ManyToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH})
-    @JoinColumn(name = "customerId",referencedColumnName = "id",nullable = false)
+    @JoinColumn(name = "cusId",referencedColumnName = "id",nullable = false)
     private Customer cusId;
     private double cost;
     private String orderDate;
