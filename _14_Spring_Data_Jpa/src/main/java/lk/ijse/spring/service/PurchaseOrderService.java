@@ -12,10 +12,18 @@ import java.util.List;
  * @author : Sandun Induranga
  * @since : 0.1.0
  **/
-public interface OrderService {
+public interface PurchaseOrderService {
+
     public List<Customer> getAllCustomerIds();
+
     public List<Item> getAllItemCodes();
+
     public CustomerDTO getCustomer(String cusId);
+
     public ItemDTO getItem(String code);
+
     public void placeOrder(OrderDTO orderDTO);
+
+    public String generateNewOrderId();
+
 }

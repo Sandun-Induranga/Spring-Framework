@@ -1,7 +1,7 @@
 package lk.ijse.spring.service.impl;
 
 import lk.ijse.spring.dto.OrderDetailDTO;
-import lk.ijse.spring.service.OrderService;
+import lk.ijse.spring.service.PurchaseOrderService;
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.dto.ItemDTO;
 import lk.ijse.spring.dto.OrderDTO;
@@ -26,7 +26,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class OrderServiceImpl implements OrderService {
+public class PurchaseOrderServiceImpl implements PurchaseOrderService {
 
     @Autowired
     CustomerRepo customerRepo;
@@ -77,5 +77,10 @@ public class OrderServiceImpl implements OrderService {
             item.setQty(item.getQty() - orderDetail.getQty());
             itemRepo.save(item);
         }
+    }
+
+    @Override
+    public String generateNewOrderId() {
+        return null;
     }
 }

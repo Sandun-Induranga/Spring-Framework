@@ -3,13 +3,11 @@ package lk.ijse.spring.config;
 import lk.ijse.spring.advicer.AppWideExceptionHandler;
 import lk.ijse.spring.controller.CustomerController;
 import lk.ijse.spring.controller.ItemController;
-import lk.ijse.spring.controller.OrderController;
+import lk.ijse.spring.controller.PurchaseOrderController;
 import lk.ijse.spring.controller.OrderDetailController;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.modelmapper.ModelMapper;
 
 /**
  * @author : Sandun Induranga
@@ -18,7 +16,7 @@ import org.modelmapper.ModelMapper;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackageClasses = {CustomerController.class, ItemController.class, OrderController.class, OrderDetailController.class, AppWideExceptionHandler.class})
+@ComponentScan(basePackageClasses = {CustomerController.class, ItemController.class, PurchaseOrderController.class, OrderDetailController.class, AppWideExceptionHandler.class})
 public class WebAppConfig {
 
 
