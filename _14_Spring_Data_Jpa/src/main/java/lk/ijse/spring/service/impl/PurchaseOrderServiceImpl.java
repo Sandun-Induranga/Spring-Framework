@@ -14,6 +14,7 @@ import lk.ijse.spring.repo.ItemRepo;
 import lk.ijse.spring.repo.OrderRepo;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -62,7 +63,7 @@ public class PurchaseOrderServiceImpl implements PurchaseOrderService {
 
     @Override
     public void placeOrder(OrderDTO orderDTO) {
-        String orderId = "OID001";
+        String orderId = generateNewOrderId();
         List<OrderDetailDTO> orderDetails = orderDTO.getOrderDetails();
         orderDTO.setOrderId(orderId);
         for (OrderDetailDTO orderDetail : orderDetails) {
@@ -81,6 +82,11 @@ public class PurchaseOrderServiceImpl implements PurchaseOrderService {
 
     @Override
     public String generateNewOrderId() {
-        return null;
+
+        List<Orders> all = orderRepo.findAll();
+        String last = all.get(all.size() - 1).getOrderId();
+
+        return last != null ? String.format("OID%03d", (Integer.parseInt(last.replace("OID", "")) + 1)) : "OID001";
+
     }
 }
