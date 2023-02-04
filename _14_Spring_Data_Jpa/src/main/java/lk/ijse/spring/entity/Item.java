@@ -22,7 +22,6 @@ public class Item {
     @Id
     String code;
     String name;
-
     int qty;
     double price;
 

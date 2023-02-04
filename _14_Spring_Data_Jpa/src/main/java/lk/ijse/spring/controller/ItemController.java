@@ -39,6 +39,7 @@ public class ItemController {
     @PostMapping
     public ResponseUtil saveItem(@ModelAttribute ItemDTO itemDTO) {
 
+        System.out.println(itemDTO);
         itemService.saveItem(itemDTO);
         return new ResponseUtil("OK", "Successfully Added..!", "");
 
