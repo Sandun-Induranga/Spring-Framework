@@ -14,7 +14,6 @@ import lk.ijse.spring.repo.ItemRepo;
 import lk.ijse.spring.repo.OrderRepo;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -40,6 +39,7 @@ public class PurchaseOrderServiceImpl implements PurchaseOrderService {
 
     @Autowired
     private ModelMapper mapper;
+
 
     @Override
     public List<Customer> getAllCustomerIds() {
