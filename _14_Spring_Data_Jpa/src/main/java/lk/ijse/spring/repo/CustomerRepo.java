@@ -13,5 +13,6 @@ import java.util.ArrayList;
 public interface CustomerRepo extends JpaRepository<Customer, String> {
 
     ArrayList<Customer> findCustomerByName(String name);
+    ArrayList<Customer> findByName(String name);
 
 }
