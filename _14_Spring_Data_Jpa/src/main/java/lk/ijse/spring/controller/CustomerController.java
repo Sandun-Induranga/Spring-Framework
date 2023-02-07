@@ -28,9 +28,9 @@ public class CustomerController {
     }
 
     @GetMapping(params = {"name"})
-    public ResponseUtil getCustomerByName(String name) {
+    public ResponseUtil searchCustomerByName(String name) {
 
-        return new ResponseUtil("OK", "Successfully Loaded..!", service.getAllCustomer());
+        return new ResponseUtil("OK", "Successfully Loaded..!", service.searchCustomer(name));
 
     }
 
