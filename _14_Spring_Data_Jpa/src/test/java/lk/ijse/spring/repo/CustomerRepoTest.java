@@ -71,6 +71,12 @@ class CustomerRepoTest {
         ArrayList<Customer> customers = customerRepo.methodOne();
         System.out.println(customers);
 
+        ArrayList<Customer> customers1 = customerRepo.methodTwo();
+        System.out.println(customers1);
+
+        ArrayList<Customer> customers2 = customerRepo.methodThree("C001", "John");
+        System.out.println(customers2);
+
     }
 
 }
