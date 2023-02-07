@@ -26,7 +26,7 @@ public interface CustomerRepo extends JpaRepository<Customer, String> {
 
     ArrayList<Customer> streamCustomerByName(String name);
 
-    ArrayList<Customer> countCustomerByName(String name);
+    long countCustomerByName(String name);
 
     boolean existsCustomerByAddress(String address);
 

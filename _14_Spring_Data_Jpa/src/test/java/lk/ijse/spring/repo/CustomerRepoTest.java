@@ -43,7 +43,7 @@ class CustomerRepoTest {
     }
 
     @Test
-    void testAllMethods(){
+    void testAllMethods() {
         ArrayList<Customer> c = customerRepo.findCustomerByName("Dasun");
         ArrayList<Customer> c1 = customerRepo.readCustomerByName("Dasun");
         ArrayList<Customer> c2 = customerRepo.getCustomerByName("Dasun");
@@ -57,5 +57,13 @@ class CustomerRepoTest {
         System.out.println(c3);
         System.out.println(c4);
         System.out.println(c5);
+
+        long count = customerRepo.countCustomerByName("Dasun");
+        System.out.println(count);
+
+        boolean exists = customerRepo.existsCustomerByAddress("Colombo");
+        System.out.println(exists);
+
     }
+
 }
