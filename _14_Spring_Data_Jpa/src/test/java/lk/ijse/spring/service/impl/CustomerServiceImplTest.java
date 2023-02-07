@@ -61,11 +61,12 @@ class CustomerServiceImplTest {
 
     @Test
     void getAllCustomer() {
-        customerService.getAllCustomer();
+        assertNotNull(customerService.getAllCustomer());
     }
 
     @Test
     void searchCustomer() {
         customerService.searchCustomer("Dasun");
     }
+
 }
