@@ -12,10 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/repo/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/repo/CustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,6 +108,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="lk.ijse.spring.service.impl" />
       <recent name="lk.ijse.spring.repo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -118,7 +116,7 @@
       <recent name="lk.ijse.spring.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerRepoTest.testAllMethods">
+  <component name="RunManager" selected="JUnit.CustomerServiceImplTest">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -149,6 +147,21 @@
       <option name="MAIN_CLASS_NAME" value="lk.ijse.spring.repo.CustomerRepoTest" />
       <option name="METHOD_NAME" value="testAllMethods" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_14_Spring_Data_Jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.spring.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lk.ijse.spring.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.spring.service.impl.CustomerServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,10 +257,12 @@
       <item itemvalue="HTTP Request.generated-requests | #1" />
       <item itemvalue="JUnit.CustomerRepoTest" />
       <item itemvalue="JUnit.CustomerRepoTest.testAllMethods" />
+      <item itemvalue="JUnit.CustomerServiceImplTest" />
       <item itemvalue="Tomcat Server.Spring" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerServiceImplTest" />
         <item itemvalue="JUnit.CustomerRepoTest.testAllMethods" />
         <item itemvalue="JUnit.CustomerRepoTest" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
@@ -375,7 +390,7 @@
       <workItem from="1675572896175" duration="808000" />
       <workItem from="1675619474909" duration="6337000" />
       <workItem from="1675704455400" duration="997000" />
-      <workItem from="1675739021349" duration="11773000" />
+      <workItem from="1675739021349" duration="12137000" />
     </task>
     <servers />
   </component>
