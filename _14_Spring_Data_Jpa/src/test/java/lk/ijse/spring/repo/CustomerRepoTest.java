@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 
@@ -21,6 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @WebAppConfiguration // Create the testing context
 @ContextConfiguration(classes = {WebRootConfig.class}) // Add configuration fot the context
 @ExtendWith(SpringExtension.class) // Integrate junit with Spring
+@Transactional
 class CustomerRepoTest {
 
     @Autowired
@@ -63,6 +65,10 @@ class CustomerRepoTest {
 
         boolean exists = customerRepo.existsCustomerByAddress("Colombo");
         System.out.println(exists);
+
+        customerRepo.deleteCustomerByAddress("Colombo");
+
+        customerRepo.removeCustomerByName("Dasun");
 
     }
 

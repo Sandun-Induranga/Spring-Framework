@@ -30,7 +30,7 @@ public interface CustomerRepo extends JpaRepository<Customer, String> {
 
     boolean existsCustomerByAddress(String address);
 
-    ArrayList<Customer> deleteCustomerByAddress(String address);
-    ArrayList<Customer> removeCustomerByName(String name);
+    void deleteCustomerByAddress(String address);
+    void removeCustomerByName(String name);
 
 }
