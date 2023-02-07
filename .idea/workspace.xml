@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/repo/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/repo/CustomerRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +118,7 @@
       <recent name="lk.ijse.spring.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerRepoTest">
+  <component name="RunManager" selected="JUnit.CustomerRepoTest.testAllMethods">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -132,6 +133,22 @@
       <option name="PACKAGE_NAME" value="lk.ijse.spring.repo" />
       <option name="MAIN_CLASS_NAME" value="lk.ijse.spring.repo.CustomerRepoTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRepoTest.testAllMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_14_Spring_Data_Jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.spring.repo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lk.ijse.spring.repo" />
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.spring.repo.CustomerRepoTest" />
+      <option name="METHOD_NAME" value="testAllMethods" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -226,10 +243,12 @@
     <list>
       <item itemvalue="HTTP Request.generated-requests | #1" />
       <item itemvalue="JUnit.CustomerRepoTest" />
+      <item itemvalue="JUnit.CustomerRepoTest.testAllMethods" />
       <item itemvalue="Tomcat Server.Spring" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerRepoTest.testAllMethods" />
         <item itemvalue="JUnit.CustomerRepoTest" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
       </list>
@@ -356,7 +375,7 @@
       <workItem from="1675572896175" duration="808000" />
       <workItem from="1675619474909" duration="6337000" />
       <workItem from="1675704455400" duration="997000" />
-      <workItem from="1675739021349" duration="5738000" />
+      <workItem from="1675739021349" duration="6499000" />
     </task>
     <servers />
   </component>

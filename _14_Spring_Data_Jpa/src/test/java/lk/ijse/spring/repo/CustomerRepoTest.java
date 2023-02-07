@@ -41,4 +41,21 @@ class CustomerRepoTest {
             System.out.println(customer);
         }
     }
+
+    @Test
+    void testAllMethods(){
+        ArrayList<Customer> c = customerRepo.findCustomerByName("Dasun");
+        ArrayList<Customer> c1 = customerRepo.readCustomerByName("Dasun");
+        ArrayList<Customer> c2 = customerRepo.getCustomerByName("Dasun");
+        ArrayList<Customer> c3 = customerRepo.queryCustomerByName("Dasun");
+        ArrayList<Customer> c4 = customerRepo.searchCustomerByName("Dasun");
+        ArrayList<Customer> c5 = customerRepo.streamCustomerByName("Dasun");
+
+        System.out.println(c);
+        System.out.println(c1);
+        System.out.println(c2);
+        System.out.println(c3);
+        System.out.println(c4);
+        System.out.println(c5);
+    }
 }
