@@ -30,12 +30,28 @@ class CustomerServiceImplTest {
 
     @Test
     void saveCustomer() {
-        customerService.saveCustomer(new CustomerDTO("C005","John","England",1000));
+
+        // Valid Data Test
+        customerService.saveCustomer(new CustomerDTO("C005", "John", "England", 1000));
+
+        // Invalid Data Test
+        assertThrows(RuntimeException.class, () -> {
+            customerService.saveCustomer(new CustomerDTO("C001", "John", "England", 1000));
+        });
+
     }
 
     @Test
     void updateCustomer() {
-        customerService.updateCustomer(new CustomerDTO("C002","John","America",1000));
+
+        assertDoesNotThrow(()->{
+            customerService.updateCustomer(new CustomerDTO("C002", "John", "America", 1000));
+        });
+
+        assertThrows(RuntimeException.class, () -> {
+            customerService.updateCustomer(new CustomerDTO("C005", "John", "England", 1000));
+        });
+
     }
 
     @Test
