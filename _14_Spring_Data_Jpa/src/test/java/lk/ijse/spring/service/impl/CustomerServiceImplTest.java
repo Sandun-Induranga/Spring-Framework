@@ -44,7 +44,7 @@ class CustomerServiceImplTest {
     @Test
     void updateCustomer() {
 
-        assertDoesNotThrow(()->{
+        assertDoesNotThrow(() -> {
             customerService.updateCustomer(new CustomerDTO("C002", "John", "America", 1000));
         });
 
@@ -56,7 +56,14 @@ class CustomerServiceImplTest {
 
     @Test
     void deleteCustomer() {
-        customerService.deleteCustomer("C001");
+        assertDoesNotThrow(() -> {
+            customerService.deleteCustomer("C001");
+        });
+
+        assertThrows(RuntimeException.class, () -> {
+            customerService.deleteCustomer("C010");
+        });
+
     }
 
     @Test
