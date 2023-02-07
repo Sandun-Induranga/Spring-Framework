@@ -5,6 +5,7 @@ import lk.ijse.spring.service.CustomerService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
  **/
 
 @SpringBootTest
+@Transactional
 class CustomerServiceImplTest {
 
     @Autowired
@@ -24,7 +26,7 @@ class CustomerServiceImplTest {
     void saveCustomer() {
 
         // Valid Data Test
-        customerService.saveCustomer(new CustomerDTO("C005", "John", "England", 1000));
+        customerService.saveCustomer(new CustomerDTO("C006", "John", "England", 1000));
 
         // Invalid Data Test
         assertThrows(RuntimeException.class, () -> {
@@ -37,11 +39,11 @@ class CustomerServiceImplTest {
     void updateCustomer() {
 
         assertDoesNotThrow(() -> {
-            customerService.updateCustomer(new CustomerDTO("C002", "John", "America", 1000));
+            customerService.updateCustomer(new CustomerDTO("C001", "John", "America", 1000));
         });
 
         assertThrows(RuntimeException.class, () -> {
-            customerService.updateCustomer(new CustomerDTO("C005", "John", "England", 1000));
+            customerService.updateCustomer(new CustomerDTO("C006", "John", "England", 1000));
         });
 
     }

@@ -3,15 +3,11 @@ package lk.ijse.spring.repo;
 
 import lk.ijse.spring.entity.Customer;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
@@ -24,6 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
  **/
 
 @SpringBootTest
+@Transactional
 class CustomerRepoTest {
 
     @Autowired
