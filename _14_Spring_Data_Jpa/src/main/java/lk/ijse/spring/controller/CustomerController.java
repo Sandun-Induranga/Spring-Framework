@@ -27,6 +27,13 @@ public class CustomerController {
 
     }
 
+    @GetMapping(params = {"name"})
+    public ResponseUtil getCustomerByName(String name) {
+
+        return new ResponseUtil("OK", "Successfully Loaded..!", service.getAllCustomer());
+
+    }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED) // 201
     public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customerDTO) {
