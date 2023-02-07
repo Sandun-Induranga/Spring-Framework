@@ -66,9 +66,10 @@ class CustomerRepoTest {
         boolean exists = customerRepo.existsCustomerByAddress("Colombo");
         System.out.println(exists);
 
-        customerRepo.deleteCustomerByAddress("Colombo");
+//        customerRepo.deleteCustomerByAddress("Colombo");
 
-        customerRepo.removeCustomerByName("Dasun");
+        ArrayList<Customer> customers = customerRepo.methodOne();
+        System.out.println(customers);
 
     }
 

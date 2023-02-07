@@ -2,6 +2,7 @@ package lk.ijse.spring.repo;
 
 import lk.ijse.spring.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import java.util.ArrayList;
 
@@ -32,5 +33,8 @@ public interface CustomerRepo extends JpaRepository<Customer, String> {
 
     void deleteCustomerByAddress(String address);
     void removeCustomerByName(String name);
+
+    @Query(value = "SELECT * FROM Customer", nativeQuery = true)
+    ArrayList<Customer> methodOne();
 
 }

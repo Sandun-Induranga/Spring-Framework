@@ -13,11 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/repo/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/main/java/lk/ijse/spring/repo/CustomerRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/repo/CustomerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/classes/lk/ijse/spring/repo/CustomerRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/test-classes/lk/ijse/spring/repo/CustomerRepoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/test-classes/lk/ijse/spring/repo/CustomerRepoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +375,7 @@
       <workItem from="1675572896175" duration="808000" />
       <workItem from="1675619474909" duration="6337000" />
       <workItem from="1675704455400" duration="997000" />
-      <workItem from="1675739021349" duration="9021000" />
+      <workItem from="1675739021349" duration="10125000" />
     </task>
     <servers />
   </component>
