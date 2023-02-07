@@ -13,7 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2928cfb9-c4ce-45da-8c69-6669e128e92d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/test/java/lk/ijse/spring/repo/CustomerRepoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/test/java/lk/ijse/spring/service/impl/CustomerServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/src/test/java/lk/ijse/spring/service/impl/CustomerServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/test-classes/lk/ijse/spring/repo/CustomerRepoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/test-classes/lk/ijse/spring/repo/CustomerRepoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/test-classes/lk/ijse/spring/service/impl/CustomerServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/_14_Spring_Data_Jpa/target/test-classes/lk/ijse/spring/service/impl/CustomerServiceImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +122,7 @@
       <recent name="lk.ijse.spring.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerServiceImplTest">
+  <component name="RunManager" selected="JUnit.CustomerRepoTest.pagingAndSorting">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -133,6 +137,22 @@
       <option name="PACKAGE_NAME" value="lk.ijse.spring.repo" />
       <option name="MAIN_CLASS_NAME" value="lk.ijse.spring.repo.CustomerRepoTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRepoTest.pagingAndSorting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_14_Spring_Data_Jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.spring.repo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lk.ijse.spring.repo" />
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.spring.repo.CustomerRepoTest" />
+      <option name="METHOD_NAME" value="pagingAndSorting" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,12 +278,14 @@
     <list>
       <item itemvalue="HTTP Request.generated-requests | #1" />
       <item itemvalue="JUnit.CustomerRepoTest" />
+      <item itemvalue="JUnit.CustomerRepoTest.pagingAndSorting" />
       <item itemvalue="JUnit.CustomerRepoTest.testAllMethods" />
       <item itemvalue="JUnit.CustomerServiceImplTest" />
       <item itemvalue="Tomcat Server.Spring" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerRepoTest.pagingAndSorting" />
         <item itemvalue="JUnit.CustomerServiceImplTest" />
         <item itemvalue="JUnit.CustomerRepoTest.testAllMethods" />
         <item itemvalue="JUnit.CustomerRepoTest" />
@@ -392,7 +414,7 @@
       <workItem from="1675572896175" duration="808000" />
       <workItem from="1675619474909" duration="6337000" />
       <workItem from="1675704455400" duration="997000" />
-      <workItem from="1675739021349" duration="17244000" />
+      <workItem from="1675739021349" duration="18955000" />
     </task>
     <servers />
   </component>

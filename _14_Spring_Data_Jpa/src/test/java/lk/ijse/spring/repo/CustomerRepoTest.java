@@ -5,6 +5,9 @@ import lk.ijse.spring.entity.Customer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -81,6 +84,15 @@ class CustomerRepoTest {
 
         System.out.println(customerRepo.getCustomerWithHQL());
 
+    }
+
+    @Test
+    public void pagingAndSorting() {
+        PageRequest of = PageRequest.of(0, 3, Sort.by("salary"));
+        Page<Customer> all = customerRepo.findAll(of);
+        for (Customer customer : all.toList()) {
+            System.out.println(customer);
+        }
     }
 
 }
