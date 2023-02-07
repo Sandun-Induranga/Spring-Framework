@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author : Sandun Induranga
@@ -33,7 +34,16 @@ public interface CustomerRepo extends JpaRepository<Customer, String> {
     boolean existsCustomerByAddress(String address);
 
     void deleteCustomerByAddress(String address);
+
     void removeCustomerByName(String name);
+
+
+
+
+    //                                          SQL
+
+
+
 
     @Query(value = "SELECT * FROM Customer", nativeQuery = true)
     ArrayList<Customer> methodOne();
@@ -50,5 +60,26 @@ public interface CustomerRepo extends JpaRepository<Customer, String> {
     // Name Params
     @Query(value = "SELECT * FROM Customer WHERE id=:a AND name=:b", nativeQuery = true)
     ArrayList<Customer> methodFour(@Param("a") String id, @Param("b") String name);
+
+
+
+    //                                             JPQL
+
+
+
+
+    @Query(value = "SELECT u FROM Customer  u")
+    List<Customer> getCustomerWithJPQL();
+
+
+
+
+    //                                              HQL
+
+
+
+
+    @Query(value = "FROM Customer")
+    List<Customer> getCustomerWithHQL();
 
 }

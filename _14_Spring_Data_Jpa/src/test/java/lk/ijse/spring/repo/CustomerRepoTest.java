@@ -77,6 +77,10 @@ class CustomerRepoTest {
         ArrayList<Customer> customers2 = customerRepo.methodThree("C001", "John");
         System.out.println(customers2);
 
+        System.out.println(customerRepo.getCustomerWithJPQL());
+
+        System.out.println(customerRepo.getCustomerWithHQL());
+
     }
 
 }
