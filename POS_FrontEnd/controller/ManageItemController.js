@@ -3,7 +3,7 @@
  * @since : 0.1.0
  **/
 
-const baseUrl = "http://localhost:8080/spring_jpa/";
+const baseUrl = "http://localhost:8080/app/";
 
 loadAllItems();
 

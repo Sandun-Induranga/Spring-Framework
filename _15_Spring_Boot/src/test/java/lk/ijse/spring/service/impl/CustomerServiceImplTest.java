@@ -1,6 +1,5 @@
 package lk.ijse.spring.service.impl;
 
-import lk.ijse.spring.config.WebRootConfig;
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.service.CustomerService;
 import org.junit.jupiter.api.Test;
@@ -19,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
  **/
 
 @Configuration
-@ContextConfiguration(classes = {WebRootConfig.class})
+@ContextConfiguration
 @ExtendWith(SpringExtension.class)
 @Transactional
 class CustomerServiceImplTest {
